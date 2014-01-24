@@ -37,8 +37,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="469"
-     inkscape:window-height="403"
+     inkscape:window-width="907"
+     inkscape:window-height="522"
      inkscape:window-x="200"
      inkscape:window-y="200"
      inkscape:window-maximized="0" />
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,40 +63,40 @@
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect3777"
        width="3.4169939"
-       height="34.169937"
+       height="34.314541"
        x="373.19388"
-       y="512.78857"
-       ry="0.0038900867" />
+       y="512.54773"
+       ry="0.0039065494" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect3777-7"
-       width="3.4169939"
+       width="3.4314544"
        height="27.335951"
-       x="522.99078"
+       x="522.79309"
        y="-388.91205"
        ry="0.0031120693"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect3777-7-0"
-       width="3.4169939"
-       height="27.335951"
-       x="595.52246"
-       y="284.14154"
-       ry="0.0031120693"
-       transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)" />
+       width="3.4206147"
+       height="27.42276"
+       x="594.95184"
+       y="282.95813"
+       ry="0.0031219521"
+       transform="matrix(0.86510868,0.50158445,-0.49841722,0.8669373,0,0)" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect3777-7-0-4"
-       width="3.4169939"
-       height="27.335951"
-       x="-53.752502"
-       y="659.56427"
-       ry="0.0031120693"
-       transform="matrix(-0.8660254,0.5,0.5,0.8660254,0,0)" />
+       width="3.4206147"
+       height="27.42276"
+       x="-55.011124"
+       y="659.57306"
+       ry="0.0031219521"
+       transform="matrix(-0.86510868,0.50158445,0.49841722,0.8669373,0,0)" />
     <g
        id="g3903"
-       transform="matrix(0.34169939,0,0,0.34169939,516.70761,458.09054)">
+       transform="matrix(0.34169939,0,0,0.34314543,516.70761,457.6182)">
       <a
          id="a3891">
         <path
