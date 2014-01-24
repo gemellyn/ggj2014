@@ -13,7 +13,12 @@ public class PickableObject : MonoBehaviour {
 	
 	}
 
-	void function OnTriggerEnter (other : Collider) {
+	/*
+	void OnTriggerEnter (Collider : other) {
 		Debug.Log ("Enter", other.gameObject);
+		if (myTrigger.gameObject.name == “Box”){
+			Debug.Log(“In proximity”) ;
+		}
 	}
+	*/
 }
