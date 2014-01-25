@@ -66,8 +66,8 @@ TextureImporter:
         y: 0
         width: 649
         height: 1585
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .572663605, y: 0}
     - name: face_walk2
       rect:
         serializedVersion: 2
@@ -75,8 +75,8 @@ TextureImporter:
         y: 0
         width: 632
         height: 1585
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .420716107, y: 0}
     - name: back_walk1
       rect:
         serializedVersion: 2
@@ -84,8 +84,8 @@ TextureImporter:
         y: 0
         width: 649
         height: 1585
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .608995438, y: .00595068093}
     - name: back_walk2
       rect:
         serializedVersion: 2
@@ -93,8 +93,8 @@ TextureImporter:
         y: 0
         width: 688
         height: 1590
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .37661922, y: .00593196834}
     - name: suicide1
       rect:
         serializedVersion: 2
