@@ -16,9 +16,11 @@ public class PickableObject : MonoBehaviour {
 
     private string luiStatus = "out";
     private Transform PParticle ;
-    ParticleSystem PPS ;
+    private ParticleSystem PPS ;
     private Transform PParticle2;
-    ParticleSystem PPS2;
+    private ParticleSystem PPS2;
+    private RaycastHit hit;
+    private string raycastMSG = "";
 
     void Start(){
         objectToPick = transform.parent.gameObject;
@@ -32,8 +34,8 @@ public class PickableObject : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.name == "player") {
             if (!this.picked){
+                this.pickable = true;
                 PPS.Play(false);
-                this.pickable = true ;
             }
 		}else if (!this.used && other.gameObject.name == "lui"){
             luiStatus = "IN";
@@ -48,6 +50,17 @@ public class PickableObject : MonoBehaviour {
         if (this.picked){
             PPS.Stop(false);
         }
+        /*
+        if (this.pickable && Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 100)){
+            raycastMSG = "Hit: " + hit.collider.gameObject.name + " moi: " + objectToPick.name ;
+            if (hit.collider.gameObject.name == objectToPick.name){
+                PPS.Play(false);
+            }
+            else{
+                PPS.Stop(false);
+            }
+        }
+         * */
     }
 
 	void OnTriggerExit(Collider other) {
@@ -62,5 +75,7 @@ public class PickableObject : MonoBehaviour {
 
     public void OnGUI(){
         GUI.Label(new Rect(600, 5, 180, 20), "Lui in trigger: " + luiStatus.ToString());
+        GUI.Label(new Rect(600, 35, 180, 20), "" + raycastMSG.ToString());
+        GUI.Label(new Rect(600, 55, 180, 20), "Pickable ?: " + this.pickable.ToString());
     }
 }
