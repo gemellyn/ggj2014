@@ -43,7 +43,7 @@ public class PlayerPick : MonoBehaviour {
 
 	}
 
-    public bool getObject(){
+    public Transform getObject(){
         if (hitObject != null){
             return hitObject.transform ;
         }
