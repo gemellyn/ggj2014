@@ -46,62 +46,98 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 558
+        width: 512
         height: 1585
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: back
       rect:
         serializedVersion: 2
-        x: 558
+        x: 668
         y: 0
-        width: 558
+        width: 550
         height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: face_walk1
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 649
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: face_walk2
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 0
+        width: 632
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: back_walk1
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 0
+        width: 649
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: back_walk2
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 0
+        width: 688
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: suicide1
       rect:
         serializedVersion: 2
-        x: 1116
+        x: 4304
         y: 0
-        width: 558
-        height: 1585
+        width: 608
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: suicide2
       rect:
         serializedVersion: 2
-        x: 1674
+        x: 4924
         y: 0
-        width: 558
-        height: 1585
+        width: 553
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: suicide3
       rect:
         serializedVersion: 2
-        x: 2232
+        x: 5496
         y: 0
-        width: 558
-        height: 1585
+        width: 583
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: suicide4
       rect:
         serializedVersion: 2
-        x: 2790
+        x: 6100
         y: 0
-        width: 558
-        height: 1585
+        width: 601
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
     - name: suicide5
       rect:
         serializedVersion: 2
-        x: 3348
+        x: 6729
         y: 0
-        width: 1325
-        height: 1558
+        width: 1401
+        height: 1590
       alignment: 7
       pivot: {x: .5, y: 0}
   spritePackingTag: 
