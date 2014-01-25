@@ -6,23 +6,31 @@ public class PickableObject : MonoBehaviour {
 	private GameObject objectToPick ;
 	public Material shineMat ;
 	public Material oldMat ;
+	private bool picked = false ;
+	private Camera mainCam ;
+	public bool pickable = false ;
+
+	void Start(){
+		mainCam = Camera.main;
+	}
 
 	void OnTriggerEnter(Collider other) {
+		Debug.Log (other.gameObject.name);
 		if (other.gameObject.name == "player") {
 			Debug.Log("Player in trigger");
-			objectToPick = this.transform.parent.gameObject ;
+			objectToPick = transform.parent.gameObject ;
 			if(oldMat == null){
-				oldMat = objectToPick.renderer.materials[0] ;
+				oldMat = objectToPick.renderer.materials[0] ; 
 			}
 			objectToPick.renderer.material = shineMat ;
-			Debug.Log(objectToPick.renderer.materials[0]) ;
-			Debug.Log(this.transform.parent.gameObject.name) ;
+			this.pickable = true ;
 		}
 	}
 	void OnTriggerExit(Collider other) {
 		if (other.gameObject.name == "player") {
 			Debug.Log("Player out of trigger");
 			objectToPick.renderer.material = oldMat ;
+			this.pickable = false ;
 		}
 	}
 }
