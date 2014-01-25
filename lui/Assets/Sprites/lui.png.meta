@@ -46,18 +46,63 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 1250
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: back
       rect:
         serializedVersion: 2
-        x: 500
+        x: 558
         y: 0
-        width: 500
-        height: 1250
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: suicide1
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: suicide2
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 0
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: suicide3
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 0
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: suicide4
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 0
+        width: 558
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: suicide5
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 0
+        width: 535
+        height: 1585
+      alignment: 7
+      pivot: {x: .5, y: 0}
   spritePackingTag: 
   userData: 
