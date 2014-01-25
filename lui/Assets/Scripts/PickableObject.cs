@@ -3,22 +3,26 @@ using System.Collections;
 
 public class PickableObject : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	private GameObject objectToPick ;
+	public Material shineMat ;
+	public Material oldMat ;
 
-	/*
-	void OnTriggerEnter (Collider : other) {
-		Debug.Log ("Enter", other.gameObject);
-		if (myTrigger.gameObject.name == “Box”){
-			Debug.Log(“In proximity”) ;
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.name == "player") {
+			Debug.Log("Player in trigger");
+			objectToPick = this.transform.parent.gameObject ;
+			if(oldMat == null){
+				oldMat = objectToPick.renderer.materials[0] ;
+			}
+			objectToPick.renderer.material = shineMat ;
+			Debug.Log(objectToPick.renderer.materials[0]) ;
+			Debug.Log(this.transform.parent.gameObject.name) ;
 		}
 	}
-	*/
+	void OnTriggerExit(Collider other) {
+		if (other.gameObject.name == "player") {
+			Debug.Log("Player out of trigger");
+			objectToPick.renderer.material = oldMat ;
+		}
+	}
 }

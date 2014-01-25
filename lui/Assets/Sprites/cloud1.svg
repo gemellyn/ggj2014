@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="231.64384"
-   height="201.42859"
+   width="1000"
+   height="870.00006"
    id="svg4840"
    version="1.1"
    inkscape:version="0.48.2 r9819"
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="93.11653"
-     inkscape:cy="87.268552"
+     inkscape:zoom="0.0875"
+     inkscape:cx="1979.3363"
+     inkscape:cy="1533.7237"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-259.17807,-431.64789)">
+     transform="translate(1221.6192,-1414.9741)">
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -67,11 +67,8 @@
        sodipodi:cy="119.42857"
        sodipodi:rx="77.85714"
        sodipodi:ry="85.714287"
-       d="m -280.00001,119.42857 a 77.85714,85.714287 0 1 1 -155.71428,0 77.85714,85.714287 0 1 1 155.71428,0 z"
-       transform="matrix(0.72873647,0,0,0.63711581,576.69896,454.14976)"
-       inkscape:export-filename="D:\WIP\GGJ2014\lui\Assets\Sprites\cloud.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="m -280.00001,119.42857 c 0,47.3387 -34.85783,85.71429 -77.85714,85.71429 -42.99931,0 -77.85714,-38.37559 -77.85714,-85.71429 0,-47.33869 34.85783,-85.714283 77.85714,-85.714283 42.99931,0 77.85714,38.375593 77.85714,85.714283 z"
+       transform="matrix(3.1684194,0,0,2.7714538,158.90635,1506.6428)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -80,11 +77,8 @@
        sodipodi:cy="119.42857"
        sodipodi:rx="77.85714"
        sodipodi:ry="85.714287"
-       d="m -280.00001,119.42857 a 77.85714,85.714287 0 1 1 -155.71428,0 77.85714,85.714287 0 1 1 155.71428,0 z"
-       transform="matrix(0.71962725,0,0,0.63711581,645.07006,502.37672)"
-       inkscape:export-filename="D:\WIP\GGJ2014\lui\Assets\Sprites\cloud.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="m -280.00001,119.42857 c 0,47.3387 -34.85783,85.71429 -77.85714,85.71429 -42.99931,0 -77.85714,-38.37559 -77.85714,-85.71429 0,-47.33869 34.85783,-85.714283 77.85714,-85.714283 42.99931,0 77.85714,38.375593 77.85714,85.714283 z"
+       transform="matrix(3.1288139,0,0,2.7714538,456.17192,1716.4302)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -93,11 +87,8 @@
        sodipodi:cy="119.42857"
        sodipodi:rx="77.85714"
        sodipodi:ry="85.714287"
-       d="m -280.00001,119.42857 a 77.85714,85.714287 0 1 1 -155.71428,0 77.85714,85.714287 0 1 1 155.71428,0 z"
-       transform="matrix(0.86537457,0,0,0.63711581,690.13461,411.59657)"
-       inkscape:export-filename="D:\WIP\GGJ2014\lui\Assets\Sprites\cloud.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="m -280.00001,119.42857 c 0,47.3387 -34.85783,85.71429 -77.85714,85.71429 -42.99931,0 -77.85714,-38.37559 -77.85714,-85.71429 0,-47.33869 34.85783,-85.714283 77.85714,-85.714283 42.99931,0 77.85714,38.375593 77.85714,85.714283 z"
+       transform="matrix(3.7624981,0,0,2.7714538,652.10467,1321.5365)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -106,10 +97,7 @@
        sodipodi:cy="119.42857"
        sodipodi:rx="77.85714"
        sodipodi:ry="85.714287"
-       d="m -280.00001,119.42857 a 77.85714,85.714287 0 1 1 -155.71428,0 77.85714,85.714287 0 1 1 155.71428,0 z"
-       transform="matrix(0.86537457,0,0,0.63711581,731.48296,453.31597)"
-       inkscape:export-filename="D:\WIP\GGJ2014\lui\Assets\Sprites\cloud.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="m -280.00001,119.42857 c 0,47.3387 -34.85783,85.71429 -77.85714,85.71429 -42.99931,0 -77.85714,-38.37559 -77.85714,-85.71429 0,-47.33869 34.85783,-85.714283 77.85714,-85.714283 42.99931,0 77.85714,38.375593 77.85714,85.714283 z"
+       transform="matrix(3.7624981,0,0,2.7714538,831.88024,1503.0159)" />
   </g>
 </svg>
