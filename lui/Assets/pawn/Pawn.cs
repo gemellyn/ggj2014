@@ -30,19 +30,23 @@ public class Pawn : MonoBehaviour {
 
         transform.FindChild("sprite").transform.LookAt(Camera.main.transform.position);
 
-        /*if (Vector3.Dot(transform.forward,Camera.main.transform.forward) > 0 && eyeCheckTimer <= 0)
-            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;
-        else
-            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = face;
+        //transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
 
-        if(fixeJoueur)
-            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = face;
+        if (!transform.FindChild("sprite").GetComponent<Animation>().animation.isPlaying)
+        {
 
-        if (dosJoueur)
-            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;*/
+            if (Vector3.Dot(transform.forward, Camera.main.transform.forward) > 0 && eyeCheckTimer <= 0)
+                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);//transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;
+            else
+                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
 
+            if (fixeJoueur)
+                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
 
-        if(eyeCheckTimer >= 0)
+            if (dosJoueur)
+                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
+        }
+        if (eyeCheckTimer >= 0)
             eyeCheckTimer -= Time.deltaTime;
 	}
 
@@ -50,6 +54,7 @@ public class Pawn : MonoBehaviour {
     {
         if(! Gun1.isPlaying)
             Gun1.Play();
+        transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", true);
         print("suicide done");
         dead = true;   
     }
