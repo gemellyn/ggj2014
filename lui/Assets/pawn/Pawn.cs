@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Pawn : MonoBehaviour {
 
+    public AudioSource Gun1 = null;
+    private bool dead = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -20,4 +23,19 @@ public class Pawn : MonoBehaviour {
 
         transform.FindChild("sprite").transform.LookAt(Camera.main.transform.position);
 	}
+
+    public void suicide()
+    {
+        if(! Gun1.isPlaying)
+            Gun1.Play();
+        print("suicide done");
+        dead = true;
+
+      
+        
+    }
+    public bool isDead()
+    {
+        return dead;
+    }
 }

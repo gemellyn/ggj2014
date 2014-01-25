@@ -8,6 +8,22 @@ public class IA : MonoBehaviour {
     public Transform player = null;
     private Pawn pawn;
 
+    //Rumination
+    private float rumination = 0;
+    const float ruminPerSecBase = 5;
+    const float ruminPerSecPlayerNear = 1; 
+
+    //Autiste
+    private float autiste = 0;
+    const float autistePerSecBase = 5;
+    const float autistePerSecPlayerNear = 1; 
+    
+    //Etat
+    private bool playerNear = false;
+
+    
+
+
     //Etats
     private enum STATE_AI
     {
@@ -20,6 +36,7 @@ public class IA : MonoBehaviour {
 
     //timers
     float elapsedFollow = 0;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +46,9 @@ public class IA : MonoBehaviour {
 
     void stateFollow()
     {
+        if (lastState != STATE_AI.STATE_FOLLOW)
+            print("follow");
+
         if ((player.transform.position - transform.position).magnitude < 3.0)
         {
             GetComponent<NavMeshAgent>().ResetPath();
@@ -41,16 +61,25 @@ public class IA : MonoBehaviour {
 
     void stateBase()
     {
-        
+        if (lastState != STATE_AI.STATE_BASE)
+        {
+            GetComponent<NavMeshAgent>().ResetPath();
+            print("base");
+
+        }
     }
 
     void stateRoam()
     {
-        timeStop -= Time.deltaTime;
-        if (timeStop <= 0)
+        if (lastState != STATE_AI.STATE_ROAM)
+            print("roam");
+
+        if (GetComponent<NavMeshAgent>().pathStatus == NavMeshPathStatus.PathComplete)
         {
-            GetComponent<NavMeshAgent>().destination = new Vector3(Random.Range(-20, 20), 0, Random.Range(-20, 20));
-            timeStop = Random.Range(5, 6);
+            //GetComponent<NavMeshAgent>().destinati//on = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
+            Vector3 dest = player.transform.position + player.transform.forward * 200;
+            GetComponent<NavMeshAgent>().destination = dest;
+           //GetComponent<NavMeshAgent>().destination = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
         }
     }
 
@@ -70,7 +99,46 @@ public class IA : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (pawn.isDead())
+        {
+            transform.FindChild("sprite").renderer.enabled = false;
+            return;
+        }
+
         drawDebugStuff();
+
+        //Update etat
+        playerNear = false;
+        if ((player.transform.position - transform.position).magnitude < 3.0)
+            playerNear = true;
+
+        //Updates jauges
+        float ruminPerSec = ruminPerSecBase;
+        if (playerNear)
+            ruminPerSec = ruminPerSecPlayerNear;
+
+        rumination += Time.deltaTime * ruminPerSec;
+
+        float autistePerSec = autistePerSecBase;
+        if (playerNear)
+            autistePerSec = autistePerSecPlayerNear;
+
+        autiste += Time.deltaTime * autistePerSec;
+
+        //Test jauges
+        if (rumination >= 100)
+        {
+            pawn.suicide();
+        }
+
+        //Test jauges
+        state = STATE_AI.STATE_FOLLOW;
+        if (autiste >= 20)
+            state = STATE_AI.STATE_BASE;
+        if (autiste >= 50)
+            state = STATE_AI.STATE_ROAM;
+
+
 
         switch (state)
         {
