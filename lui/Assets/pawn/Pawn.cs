@@ -20,41 +20,56 @@ public class Pawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //Anim
-        /*if (GetComponent<NavMeshAgent>().velocity.magnitude > 1.0f)
-        {
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Moves", true);
-        }
-        else
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Moves", false);*/
+        if(transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Suicide"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", false);
+        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Come"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", false);
+        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Leave"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
+
+        if (dead)
+            return;
 
         transform.FindChild("sprite").transform.LookAt(Camera.main.transform.position);
 
-        //transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
+        bool comeToPlayer = true;
+        if (Vector3.Dot((transform.position - Camera.main.transform.position).normalized, transform.forward) > 0)
+            comeToPlayer = false;
 
-        if (!transform.FindChild("sprite").GetComponent<Animation>().animation.isPlaying)
+        
+        if (fixeJoueur)
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", true);
+
+        if (dosJoueur )
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
+
+        if (!fixeJoueur && !dosJoueur)
         {
-
-            if (Vector3.Dot(transform.forward, Camera.main.transform.forward) > 0 && eyeCheckTimer <= 0)
-                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);//transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;
+            print("base");
+            if(comeToPlayer || eyeCheckTimer >= 0)
+                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", true);
             else
-                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
-
-            if (fixeJoueur)
-                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
-
-            if (dosJoueur)
                 transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
         }
+            
+        
         if (eyeCheckTimer >= 0)
             eyeCheckTimer -= Time.deltaTime;
+
+        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Suicide"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", false);
+        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Come"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", false);
+        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Leave"))
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
 	}
 
     public void suicide()
     {
-        if(! Gun1.isPlaying)
-            Gun1.Play();
+        //if(! Gun1.isPlaying)
+            //Gun1.Play();
         transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", true);
+       
         print("suicide done");
         dead = true;   
     }

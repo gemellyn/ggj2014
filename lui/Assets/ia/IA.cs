@@ -10,24 +10,24 @@ public class IA : MonoBehaviour {
 
     //Rumination
     private float rumination = 0;
-    const float ruminPerSecBase = 1;
+    const float ruminPerSecBase =2;
     const float ruminPerSecPlayerNear = 1; 
 
     //Autiste
     private float autiste = 0;
-    const float autistePerSecBase = 1;
+    const float autistePerSecBase = 2;
     const float autistePerSecPlayerNear = 1; 
 
     //Eye check
     float timerEyeCheck = 0;
-    const float periodEyeCheck = 3;
+    const float periodEyeCheck = 2;
     
     //Etat
     private bool playerNear = false;
 
     //Zones
     private float zoneJoyeux = 10.0f;
-    private float zoneTranquille = 5.0f;
+    private float zoneTranquille = 8.0f;
     private float distForwardJoyeux = 10.0f;
 
     //Eval vitesse joueur
@@ -65,7 +65,7 @@ public class IA : MonoBehaviour {
         {
             GetComponent<NavMeshAgent>().ResetPath();
             timeStop = 1;
-            timerEyeCheck = Random.Range((int) (periodEyeCheck * 0.3),(int) (periodEyeCheck * 3));
+            timerEyeCheck = Random.Range((int) (periodEyeCheck * 0.3),(int) (periodEyeCheck*1.3));
             pawn.dosAuJoueur(false);
             pawn.fixeLeJoueur(false);
             GetComponent<NavMeshAgent>().speed = speedJoyeux;
@@ -141,14 +141,8 @@ public class IA : MonoBehaviour {
             pawn.dosAuJoueur(true);
             pawn.fixeLeJoueur(false);
             GetComponent<NavMeshAgent>().speed = speedSeBarre;
-        }
-
-        if (GetComponent<NavMeshAgent>().remainingDistance < 5 )
-        {
-            //GetComponent<NavMeshAgent>().destinati//on = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
-            Vector3 dest = player.transform.position - player.transform.forward * 200;
+            Vector3 dest = transform.position + transform.forward * 200;
             GetComponent<NavMeshAgent>().destination = dest;
-           //GetComponent<NavMeshAgent>().destination = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
         }
     }
 
@@ -170,7 +164,7 @@ public class IA : MonoBehaviour {
 
         if (pawn.isDead())
         {
-            transform.FindChild("sprite").renderer.enabled = false;
+            //transform.FindChild("sprite").renderer.enabled = false;
             return;
         }
 
@@ -199,6 +193,7 @@ public class IA : MonoBehaviour {
         //Test jauges
         if (rumination >= 100)
         {
+            GetComponent<NavMeshAgent>().ResetPath();
             pawn.suicide();
         }
 
@@ -224,7 +219,7 @@ public class IA : MonoBehaviour {
                 lastState = STATE_AI.STATE_JOYEUX;
                 break;
              case STATE_AI.STATE_PROSTRE:
-                stateSeBarre();
+                stateProstre();
                 lastState = STATE_AI.STATE_PROSTRE;
                 break;
              case STATE_AI.STATE_SE_BARRE:
@@ -244,19 +239,15 @@ public class IA : MonoBehaviour {
         switch (state)
         {
             case STATE_AI.STATE_TRANQUILLE:
-                stateTranquille();
                 GUI.Label(new Rect(5, 65, 180, 20), "STATE_TRANQUILLE");
                 break;
             case STATE_AI.STATE_JOYEUX:
-                stateJoyeux();
                 GUI.Label(new Rect(5, 65, 180, 20), "STATE_JOYEUX");
                 break;
             case STATE_AI.STATE_PROSTRE:
-                stateSeBarre();
                 GUI.Label(new Rect(5, 65, 180, 20), "STATE_PROSTRE");
                 break;
             case STATE_AI.STATE_SE_BARRE:
-                stateSeBarre();
                 GUI.Label(new Rect(5, 65, 180, 20), "STATE_SE_BARRE");
                 break;
         }
