@@ -55,14 +55,15 @@ public class IA : MonoBehaviour {
             print("follow");
         }
 
-        if (GetComponent<NavMeshAgent>().remainingDistance < 2)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 1)
             timeStop -= Time.deltaTime;
 
-        if(timeStop <= 0)
+        if(timeStop <= 0 || player.GetComponent<CharacterMotor>().movement.velocity.magnitude > 0.1)
         {
-            timeStop = 1;
+            print("follow go");
+            timeStop = Random.Range(2, 3);
             //Zone devant le joueur
-            GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * (zoneFrontSize/2.0f)) +  new Vector3(Random.Range(-zoneFrontSize/2, zoneFrontSize/2), 0, Random.Range(-zoneFrontSize/2, zoneFrontSize/2));
+            GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * (zoneFrontSize/1.5f)) +  new Vector3(Random.Range(-zoneFrontSize/2, zoneFrontSize/2), 0, Random.Range(-zoneFrontSize/2, zoneFrontSize/2));
         }
     }
 
@@ -76,14 +77,15 @@ public class IA : MonoBehaviour {
             print("base");
 
         }
-        if (GetComponent<NavMeshAgent>().remainingDistance < 2)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 1)
             timeStop -= Time.deltaTime;
 
         if (timeStop <= 0)
         {
-            timeStop = 3;
+            print("base go");
+            timeStop = Random.Range(4, 6);
             //Zone derriere le joueur
-            GetComponent<NavMeshAgent>().destination = player.transform.position - (player.transform.forward * (zoneFrontSize / 2.0f)) + new Vector3(Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2), 0, Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2));
+            GetComponent<NavMeshAgent>().destination = player.transform.position - (player.transform.forward * (zoneFrontSize / 1.5f)) + new Vector3(Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2), 0, Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2));
         }
     }
 
