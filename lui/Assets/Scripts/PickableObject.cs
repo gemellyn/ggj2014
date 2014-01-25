@@ -4,25 +4,29 @@ using System.Collections;
 public class PickableObject : MonoBehaviour {
 
 	private GameObject objectToPick ;
-	public Material shineMat ;
+
+    public float delight ;
+
+	[HideInInspector]
 	public Material oldMat ;
+	[HideInInspector]
+	public bool pickable = false ;
+
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.name == "player") {
-			Debug.Log("Player in trigger");
-			objectToPick = this.transform.parent.gameObject ;
+			objectToPick = transform.parent.gameObject ;
 			if(oldMat == null){
-				oldMat = objectToPick.renderer.materials[0] ;
+				oldMat = objectToPick.renderer.materials[0] ; 
 			}
-			objectToPick.renderer.material = shineMat ;
-			Debug.Log(objectToPick.renderer.materials[0]) ;
-			Debug.Log(this.transform.parent.gameObject.name) ;
+			objectToPick.renderer.material =  Resources.Load("Pickable") as Material ;
+			this.pickable = true ;
 		}
 	}
 	void OnTriggerExit(Collider other) {
 		if (other.gameObject.name == "player") {
-			Debug.Log("Player out of trigger");
 			objectToPick.renderer.material = oldMat ;
+			this.pickable = false ;
 		}
 	}
 }
