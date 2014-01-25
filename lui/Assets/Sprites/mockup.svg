@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.044194174"
-     inkscape:cx="15318.681"
-     inkscape:cy="4612.0634"
+     inkscape:zoom="0.088388348"
+     inkscape:cx="18393.65"
+     inkscape:cy="8371.1192"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -54,7 +54,7 @@
      id="layer1"
      transform="translate(0,-284.36218)">
     <rect
-       style="fill:#ffc82d;fill-opacity:1;stroke:none"
+       style="fill:#ffc89d;fill-opacity:1;stroke:none"
        id="rect3773"
        width="16337.931"
        height="12253.448"
@@ -1507,7 +1507,7 @@
        inkscape:connector-curvature="0" />
     <g
        id="g5496"
-       transform="translate(-6335.6767,-882.46926)">
+       transform="translate(-1640.4876,-1663.1151)">
       <rect
          ry="0.065109149"
          y="-7398.4878"
