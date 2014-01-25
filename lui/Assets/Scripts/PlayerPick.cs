@@ -27,8 +27,8 @@ public class PlayerPick : MonoBehaviour {
 						hitObject = hit.collider.gameObject ;
 						hitObject.transform.rigidbody.isKinematic = true;
                         hitObject.transform.parent.transform.parent = gameObject.transform;
-                        hitObject.transform.parent.transform.LookAt(gameObject.transform.position + gameObject.transform.forward * 10.0f);
-                        hitObject.transform.parent.transform.localPosition = new Vector3(1.0f, 2.0f, 1.0f) ;
+                       // hitObject.transform.parent.transform.LookAt(gameObject.transform.position + gameObject.transform.forward * 10.0f);
+                       // hitObject.transform.parent.transform.localPosition = new Vector3(1.0f, 2.0f, 1.0f) ;
 					}
 				}
 			}
