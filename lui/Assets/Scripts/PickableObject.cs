@@ -16,16 +16,18 @@ public class PickableObject : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.name == "player") {
 			objectToPick = transform.parent.gameObject ;
-			if(oldMat == null){
+			/*if(oldMat == null){
 				oldMat = objectToPick.renderer.materials[0] ; 
-			}
-			objectToPick.renderer.material =  Resources.Load("Pickable") as Material ;
+			}*/
+			//objectToPick.renderer.material =  Resources.Load("Pickable") as Material ;
+            objectToPick.renderer.enabled = true ;
 			this.pickable = true ;
 		}
 	}
 	void OnTriggerExit(Collider other) {
 		if (other.gameObject.name == "player") {
-			objectToPick.renderer.material = oldMat ;
+			//objectToPick.renderer.material = oldMat ;
+            objectToPick.renderer.enabled = false;
 			this.pickable = false ;
 		}
 	}
