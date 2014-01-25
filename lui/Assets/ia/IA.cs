@@ -25,6 +25,10 @@ public class IA : MonoBehaviour {
     private float zoneFrontSize = 10.0f;
     private float zoneBackSize = 10.0f;
 
+    //Eval vitesse
+    private Vector3 lastPlayerPos;
+    float playerSpeed;
+
     
 
 
@@ -55,15 +59,15 @@ public class IA : MonoBehaviour {
             print("follow");
         }
 
-        if (GetComponent<NavMeshAgent>().remainingDistance < 1)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 1 || playerSpeed > 0.5)
             timeStop -= Time.deltaTime;
 
-        if(timeStop <= 0 || player.GetComponent<CharacterMotor>().movement.velocity.magnitude > 0.1)
+        if (timeStop <= 0)
         {
-            print("follow go");
             timeStop = Random.Range(2, 3);
             //Zone devant le joueur
             GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * (zoneFrontSize/1.5f)) +  new Vector3(Random.Range(-zoneFrontSize/2, zoneFrontSize/2), 0, Random.Range(-zoneFrontSize/2, zoneFrontSize/2));
+            print("follow go " + playerSpeed);
         }
     }
 
@@ -77,15 +81,16 @@ public class IA : MonoBehaviour {
             print("base");
 
         }
-        if (GetComponent<NavMeshAgent>().remainingDistance < 1)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 1 || playerSpeed > 0.5)
             timeStop -= Time.deltaTime;
 
-        if (timeStop <= 0 || player.GetComponent<CharacterMotor>().movement.velocity.magnitude > 0.1)
+        if (timeStop <= 0)
         {
-            print("base go");
             timeStop = Random.Range(4, 6);
             //Zone derriere le joueur
             GetComponent<NavMeshAgent>().destination = player.transform.position - (player.transform.forward * (zoneFrontSize / 1.5f)) - new Vector3(Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2), 0, Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2));
+            print("base go " + GetComponent<NavMeshAgent>().destination.ToString());
+            
         }
     }
 
@@ -136,7 +141,9 @@ public class IA : MonoBehaviour {
         if ((player.transform.position - transform.position).magnitude < 3.0)
             playerNear = true;
 
-        //Updates jauges
+        playerSpeed = (lastPlayerPos - player.transform.position).magnitude / Time.deltaTime;
+
+        //Updates jauges;
         float ruminPerSec = ruminPerSecBase;
         if (playerNear)
             ruminPerSec = ruminPerSecPlayerNear;
@@ -179,10 +186,13 @@ public class IA : MonoBehaviour {
                 lastState = STATE_AI.STATE_ROAM;
                 break;
         }
+
+        lastPlayerPos = player.transform.position;
 	}
 
     public void OnGUI()
     {
-        GUI.Label(new Rect (20,70,80,20), rumination.ToString());
+        GUI.Label(new Rect (5,5,80,20), rumination.ToString());
+        GUI.Label(new Rect(5, 30, 80, 20), timeStop.ToString());
     }
 }
