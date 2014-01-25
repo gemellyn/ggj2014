@@ -50,7 +50,12 @@ public class IA : MonoBehaviour {
     };
     private STATE_AI state = STATE_AI.STATE_JOYEUX;
     private STATE_AI lastState = STATE_AI.STATE_TRANQUILLE;
-    
+
+    public void addRumination(float value)
+    {
+        rumination += value;
+    }
+
 
 	// Use this for initialization
 	void Start () {
