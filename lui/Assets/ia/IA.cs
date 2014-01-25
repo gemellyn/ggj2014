@@ -101,6 +101,8 @@ public class IA : MonoBehaviour {
             GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * distForwardJoyeux) +  new Vector3(Random.Range(-zoneJoyeux/2, zoneJoyeux/2), 0, Random.Range(-zoneJoyeux/2, zoneJoyeux/2));
             print("follow go " + playerSpeed);
         }
+
+
     }
 
     //Il joue dans son coin
@@ -126,6 +128,8 @@ public class IA : MonoBehaviour {
             print("tranquille go " + GetComponent<NavMeshAgent>().destination.ToString());
             
         }
+
+        pawn.isCalm = true;
     }
 
     //Il joue dans son coin
