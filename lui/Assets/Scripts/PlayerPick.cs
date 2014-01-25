@@ -23,18 +23,24 @@ public class PlayerPick : MonoBehaviour {
 					if(hit.collider.gameObject.collider.tag == "Pick" && po.pickable){
 						hitObject = hit.collider.gameObject ;
 						hitObject.transform.rigidbody.isKinematic = true;
-                        hitObject.transform.parent.transform.parent = gameObject.transform;
-					}
+                        hitObject.transform.parent.transform.parent = transform;
+                        hitObject.transform.parent.transform.position = new Vector3(hitObject.transform.parent.transform.position.x, transform.position.y + 1.0f, hitObject.transform.parent.transform.position.z);
+                        po.picked = true ;
+                    }
 				}
 			}
 		}
 		
 		if(Input.GetKey("f")&& hitObject != null){
+            Transform PP = hitObject.transform.Find("PickableProximity");
+            PickableObject po = PP.GetComponent("PickableObject") as PickableObject;
 			hitObject.transform.parent.transform.parent = null;
             hitObject.transform.parent.transform.position = transform.position + transform.forward ;
 			hitObject.transform.rigidbody.isKinematic = false;
 			hitObject = null;
+            po.picked = false;
 		}
 
 	}
+
 }
