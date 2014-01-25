@@ -17,30 +17,39 @@ public class IA : MonoBehaviour {
     private float autiste = 0;
     const float autistePerSecBase = 1;
     const float autistePerSecPlayerNear = 1; 
+
+    //Eye check
+    float timerEyeCheck = 0;
+    const float periodEyeCheck = 3;
     
     //Etat
     private bool playerNear = false;
 
     //Zones
-    private float zoneFrontSize = 10.0f;
-    private float zoneBackSize = 10.0f;
+    private float zoneJoyeux = 10.0f;
+    private float zoneTranquille = 5.0f;
+    private float distForwardJoyeux = 10.0f;
 
-    //Eval vitesse
+    //Eval vitesse joueur
     private Vector3 lastPlayerPos;
     float playerSpeed;
 
-    
-
+    //Vitesse IA
+    const float speedJoyeux = 3.5f;
+    const float speedTranquille = 2.0f;
+    const float speedProstre = 1.0f;
+    const float speedSeBarre = 2.0f;
 
     //Etats
     private enum STATE_AI
     {
-        STATE_BASE,
-        STATE_FOLLOW,
-        STATE_ROAM
+        STATE_JOYEUX,
+        STATE_TRANQUILLE,
+        STATE_PROSTRE,
+        STATE_SE_BARRE
     };
-    private STATE_AI state = STATE_AI.STATE_FOLLOW;
-    private STATE_AI lastState = STATE_AI.STATE_BASE;
+    private STATE_AI state = STATE_AI.STATE_JOYEUX;
+    private STATE_AI lastState = STATE_AI.STATE_TRANQUILLE;
     
 
 	// Use this for initialization
@@ -50,13 +59,25 @@ public class IA : MonoBehaviour {
     }
 
     //Il joue devant nous
-    void stateFollow()
+    void stateJoyeux()
     {
-        if (lastState != STATE_AI.STATE_FOLLOW)
+        if (lastState != STATE_AI.STATE_JOYEUX)
         {
             GetComponent<NavMeshAgent>().ResetPath();
             timeStop = 1;
-            print("follow");
+            timerEyeCheck = Random.Range((int) (periodEyeCheck * 0.3),(int) (periodEyeCheck * 3));
+            pawn.dosAuJoueur(false);
+            pawn.fixeLeJoueur(false);
+            GetComponent<NavMeshAgent>().speed = speedJoyeux;
+            print("joyeux");
+        }
+
+        timerEyeCheck -= Time.deltaTime;
+        if (timerEyeCheck < 0)
+        {
+            print("eye check");
+            pawn.eyeCheck();
+            timerEyeCheck =  Random.Range((int) (periodEyeCheck),(int) (periodEyeCheck * 3));
         }
 
         if (GetComponent<NavMeshAgent>().remainingDistance < 1 || playerSpeed > 0.5)
@@ -66,41 +87,60 @@ public class IA : MonoBehaviour {
         {
             timeStop = Random.Range(2, 3);
             //Zone devant le joueur
-            GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * (zoneFrontSize/1.5f)) +  new Vector3(Random.Range(-zoneFrontSize/2, zoneFrontSize/2), 0, Random.Range(-zoneFrontSize/2, zoneFrontSize/2));
+            GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * distForwardJoyeux) +  new Vector3(Random.Range(-zoneJoyeux/2, zoneJoyeux/2), 0, Random.Range(-zoneJoyeux/2, zoneJoyeux/2));
             print("follow go " + playerSpeed);
         }
     }
 
-    //Il joue derrière de nous
-    void stateBase()
+    //Il joue dans son coin
+    void stateTranquille()
     {
-        if (lastState != STATE_AI.STATE_BASE)
+        if (lastState != STATE_AI.STATE_TRANQUILLE)
         {
             GetComponent<NavMeshAgent>().ResetPath();
             timeStop = 3;
-            print("base");
-
+            print("tranquille");
+            pawn.dosAuJoueur(true);
+            pawn.fixeLeJoueur(false);
+            GetComponent<NavMeshAgent>().speed = speedTranquille;
         }
-        if (GetComponent<NavMeshAgent>().remainingDistance < 1 || playerSpeed > 0.5)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 1)
             timeStop -= Time.deltaTime;
 
         if (timeStop <= 0)
         {
             timeStop = Random.Range(4, 6);
-            //Zone derriere le joueur
-            GetComponent<NavMeshAgent>().destination = player.transform.position - (player.transform.forward * (zoneFrontSize / 1.5f)) - new Vector3(Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2), 0, Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2));
-            print("base go " + GetComponent<NavMeshAgent>().destination.ToString());
+            //Autour de lui
+            GetComponent<NavMeshAgent>().destination = transform.position + new Vector3(Random.Range(-zoneTranquille / 2, zoneTranquille / 2), 0, Random.Range(-zoneTranquille / 2, zoneTranquille / 2));
+            print("tranquille go " + GetComponent<NavMeshAgent>().destination.ToString());
             
         }
     }
 
-    //Il part loin de nous
-    void stateRoam()
+    //Il joue dans son coin
+    void stateProstre()
     {
-        if (lastState != STATE_AI.STATE_ROAM)
+        if (lastState != STATE_AI.STATE_PROSTRE)
         {
             GetComponent<NavMeshAgent>().ResetPath();
-            print("roam");
+            timeStop = 3;
+            print("prostre");
+            pawn.dosAuJoueur(true);
+            pawn.fixeLeJoueur(false);
+            GetComponent<NavMeshAgent>().speed = speedProstre;
+        }
+    }
+
+    //Il part loin de nous
+    void stateSeBarre()
+    {
+        if (lastState != STATE_AI.STATE_SE_BARRE)
+        {
+            GetComponent<NavMeshAgent>().ResetPath();
+            print("se barre");
+            pawn.dosAuJoueur(true);
+            pawn.fixeLeJoueur(false);
+            GetComponent<NavMeshAgent>().speed = speedSeBarre;
         }
 
         if (GetComponent<NavMeshAgent>().remainingDistance < 5 )
@@ -119,7 +159,7 @@ public class IA : MonoBehaviour {
 
     void drawDebugStuff()
     {
-        if (state == STATE_AI.STATE_FOLLOW)
+        if (state == STATE_AI.STATE_JOYEUX)
             Debug.DrawLine(transform.position + transform.up, player.position, Color.magenta);
         else
             Debug.DrawLine(transform.position + transform.up, player.position, Color.blue);
@@ -163,27 +203,33 @@ public class IA : MonoBehaviour {
         }
 
         //Test jauges
-        state = STATE_AI.STATE_FOLLOW;
-        if (autiste >= 50)
-            state = STATE_AI.STATE_BASE;
+        state = STATE_AI.STATE_JOYEUX;
+        if (autiste >= 40)
+            state = STATE_AI.STATE_TRANQUILLE;
+        if (autiste >= 70)
+            state = STATE_AI.STATE_PROSTRE;
         if (autiste >= 90)
-            state = STATE_AI.STATE_ROAM;
+            state = STATE_AI.STATE_SE_BARRE;
 
 
 
         switch (state)
         {
-            case STATE_AI.STATE_BASE:
-                stateBase();
-                lastState = STATE_AI.STATE_BASE;
+            case STATE_AI.STATE_TRANQUILLE:
+                stateTranquille();
+                lastState = STATE_AI.STATE_TRANQUILLE;
                 break;
-             case STATE_AI.STATE_FOLLOW:
-                stateFollow();
-                lastState = STATE_AI.STATE_FOLLOW;
+             case STATE_AI.STATE_JOYEUX:
+                stateJoyeux();
+                lastState = STATE_AI.STATE_JOYEUX;
                 break;
-             case STATE_AI.STATE_ROAM:
-                stateRoam();
-                lastState = STATE_AI.STATE_ROAM;
+             case STATE_AI.STATE_PROSTRE:
+                stateSeBarre();
+                lastState = STATE_AI.STATE_PROSTRE;
+                break;
+             case STATE_AI.STATE_SE_BARRE:
+                stateSeBarre();
+                lastState = STATE_AI.STATE_SE_BARRE;
                 break;
         }
 
@@ -192,7 +238,27 @@ public class IA : MonoBehaviour {
 
     public void OnGUI()
     {
-        GUI.Label(new Rect (5,5,80,20), rumination.ToString());
-        GUI.Label(new Rect(5, 30, 80, 20), timeStop.ToString());
+        GUI.Label(new Rect(5, 5, 180, 20), "rumination: " + rumination.ToString());
+        GUI.Label(new Rect(5, 25, 180, 20), "timeStop: " + timeStop.ToString());
+        GUI.Label(new Rect(5, 45, 180, 20), "timerEyeCheck: " + timerEyeCheck.ToString());
+        switch (state)
+        {
+            case STATE_AI.STATE_TRANQUILLE:
+                stateTranquille();
+                GUI.Label(new Rect(5, 65, 180, 20), "STATE_TRANQUILLE");
+                break;
+            case STATE_AI.STATE_JOYEUX:
+                stateJoyeux();
+                GUI.Label(new Rect(5, 65, 180, 20), "STATE_JOYEUX");
+                break;
+            case STATE_AI.STATE_PROSTRE:
+                stateSeBarre();
+                GUI.Label(new Rect(5, 65, 180, 20), "STATE_PROSTRE");
+                break;
+            case STATE_AI.STATE_SE_BARRE:
+                stateSeBarre();
+                GUI.Label(new Rect(5, 65, 180, 20), "STATE_SE_BARRE");
+                break;
+        }
     }
 }
