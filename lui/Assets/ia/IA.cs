@@ -10,16 +10,20 @@ public class IA : MonoBehaviour {
 
     //Rumination
     private float rumination = 0;
-    const float ruminPerSecBase = 5;
+    const float ruminPerSecBase = 1;
     const float ruminPerSecPlayerNear = 1; 
 
     //Autiste
     private float autiste = 0;
-    const float autistePerSecBase = 5;
+    const float autistePerSecBase = 1;
     const float autistePerSecPlayerNear = 1; 
     
     //Etat
     private bool playerNear = false;
+
+    //Zones
+    private float zoneFrontSize = 10.0f;
+    private float zoneBackSize = 10.0f;
 
     
 
@@ -33,9 +37,6 @@ public class IA : MonoBehaviour {
     };
     private STATE_AI state = STATE_AI.STATE_FOLLOW;
     private STATE_AI lastState = STATE_AI.STATE_BASE;
-
-    //timers
-    float elapsedFollow = 0;
     
 
 	// Use this for initialization
@@ -44,40 +45,61 @@ public class IA : MonoBehaviour {
         player = GameObject.Find("player").transform;
     }
 
+    //Il joue devant nous
     void stateFollow()
     {
         if (lastState != STATE_AI.STATE_FOLLOW)
-            print("follow");
-
-        if ((player.transform.position - transform.position).magnitude < 3.0)
         {
             GetComponent<NavMeshAgent>().ResetPath();
+            timeStop = 1;
+            print("follow");
         }
-        else
+
+        if (GetComponent<NavMeshAgent>().remainingDistance < 2)
+            timeStop -= Time.deltaTime;
+
+        if(timeStop <= 0)
         {
-            GetComponent<NavMeshAgent>().destination = player.transform.position;
+            timeStop = 1;
+            //Zone devant le joueur
+            GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * (zoneFrontSize/2.0f)) +  new Vector3(Random.Range(-zoneFrontSize/2, zoneFrontSize/2), 0, Random.Range(-zoneFrontSize/2, zoneFrontSize/2));
         }
     }
 
+    //Il joue derrière de nous
     void stateBase()
     {
         if (lastState != STATE_AI.STATE_BASE)
         {
             GetComponent<NavMeshAgent>().ResetPath();
+            timeStop = 3;
             print("base");
 
         }
+        if (GetComponent<NavMeshAgent>().remainingDistance < 2)
+            timeStop -= Time.deltaTime;
+
+        if (timeStop <= 0)
+        {
+            timeStop = 3;
+            //Zone derriere le joueur
+            GetComponent<NavMeshAgent>().destination = player.transform.position - (player.transform.forward * (zoneFrontSize / 2.0f)) + new Vector3(Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2), 0, Random.Range(-zoneFrontSize / 2, zoneFrontSize / 2));
+        }
     }
 
+    //Il part loin de nous
     void stateRoam()
     {
         if (lastState != STATE_AI.STATE_ROAM)
+        {
+            GetComponent<NavMeshAgent>().ResetPath();
             print("roam");
+        }
 
-        if (GetComponent<NavMeshAgent>().pathStatus == NavMeshPathStatus.PathComplete)
+        if (GetComponent<NavMeshAgent>().remainingDistance < 5 )
         {
             //GetComponent<NavMeshAgent>().destinati//on = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
-            Vector3 dest = player.transform.position + player.transform.forward * 200;
+            Vector3 dest = player.transform.position - player.transform.forward * 200;
             GetComponent<NavMeshAgent>().destination = dest;
            //GetComponent<NavMeshAgent>().destination = new Vector3(Random.Range(-200, 200), 0, Random.Range(-200, 200));
         }
@@ -133,9 +155,9 @@ public class IA : MonoBehaviour {
 
         //Test jauges
         state = STATE_AI.STATE_FOLLOW;
-        if (autiste >= 20)
-            state = STATE_AI.STATE_BASE;
         if (autiste >= 50)
+            state = STATE_AI.STATE_BASE;
+        if (autiste >= 90)
             state = STATE_AI.STATE_ROAM;
 
 
@@ -156,4 +178,9 @@ public class IA : MonoBehaviour {
                 break;
         }
 	}
+
+    public void OnGUI()
+    {
+        GUI.Label(new Rect (20,70,80,20), rumination.ToString());
+    }
 }
