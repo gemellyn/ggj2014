@@ -23,6 +23,7 @@ public class PlayerPick : MonoBehaviour {
 					if(hit.collider.gameObject.collider.tag == "Pick" && po.pickable){
 						hitObject = hit.collider.gameObject ;
 						hitObject.transform.rigidbody.isKinematic = true;
+                        hitObject.collider.enabled = false;
                         hitObject.transform.parent.transform.parent = transform;
                         hitObject.transform.parent.transform.position = new Vector3(hitObject.transform.parent.transform.position.x, transform.position.y + 1.0f, hitObject.transform.parent.transform.position.z);
                         po.picked = true ;
@@ -37,6 +38,7 @@ public class PlayerPick : MonoBehaviour {
 			hitObject.transform.parent.transform.parent = null;
             hitObject.transform.parent.transform.position = transform.position + transform.forward ;
 			hitObject.transform.rigidbody.isKinematic = false;
+            hitObject.collider.enabled = true;
 			hitObject = null;
             po.picked = false;
 		}

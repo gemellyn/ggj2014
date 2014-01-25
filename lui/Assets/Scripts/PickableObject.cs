@@ -8,38 +8,50 @@ public class PickableObject : MonoBehaviour {
     public float delight ;
 
 	[HideInInspector]
-	public Material oldMat ;
-	[HideInInspector]
 	public bool pickable = false ;
     [HideInInspector]
     public bool picked = false;
     [HideInInspector]
-    public bool active = true ;
-    [HideInInspector]
-    public string luiStatus = "out";
+    public bool used = false ;
+
+    private string luiStatus = "out";
+    private Transform PParticle ;
+    ParticleSystem PPS ;
+    private Transform PParticle2;
+    ParticleSystem PPS2;
+
+    void Start(){
+        objectToPick = transform.parent.gameObject;
+        PParticle = objectToPick.transform.Find("PickableParticle") as Transform;
+        PPS = PParticle.GetComponent("ParticleSystem") as ParticleSystem;
+
+        PParticle2 = objectToPick.transform.Find("PickableParticle2") as Transform;
+        PPS2 = PParticle2.GetComponent("ParticleSystem") as ParticleSystem;
+    }
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.name == "player") {
-			objectToPick = transform.parent.gameObject ;
             if (!this.picked){
-                objectToPick.renderer.enabled = true;
-                this.pickable = true;
+                PPS.Play(false);
+                this.pickable = true ;
             }
-		}else if (other.gameObject.name == "lui"){
+		}else if (!this.used && other.gameObject.name == "lui"){
             luiStatus = "IN";
+            PPS2.Play(true) ;
+            this.used = true ;
+
         }
 	}
 
     void Update(){
         if (this.picked){
-            objectToPick.renderer.enabled = false;
+            PPS.Stop(false);
         }
     }
 
 	void OnTriggerExit(Collider other) {
 		if (other.gameObject.name == "player") {
-			//objectToPick.renderer.material = oldMat ;
-            objectToPick.renderer.enabled = false;
+            PPS.Stop(false);
 			this.pickable = false ;
         } else if (other.gameObject.name == "lui"){
             luiStatus = "OUT";
