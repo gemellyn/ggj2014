@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="pickables.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="552.6709"
+     inkscape:cy="580.61425"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 348.36064,477.64046 8.61565,-3.28215 2.4616,9.43617 -9.43617,2.05134 z"
+       id="path3909-58-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 350.14349,489.67471 8.61565,-3.28215 2.4616,9.43617 -9.43617,2.05133 z"
+       id="path3909-58-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 244.39204,450.05257 3.53553,8.83883 3.283,0 -2.52538,-6.81853 z"
+       id="path2999"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 248.05385,450.17884 3.53553,8.83883 3.283,0 -2.52538,-6.81853 z"
+       id="path2999-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3905"
+       sodipodi:cx="361.78571"
+       sodipodi:cy="532.36218"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="5.3571429"
+       sodipodi:argument="-18.206055"
+       sodipodi:t0="0"
+       d="m 361.78571,532.36218 c 0.21487,0.16116 -0.11123,0.36917 -0.26786,0.35715 -0.42446,-0.0326 -0.56588,-0.5501 -0.44643,-0.89286 0.21367,-0.61313 0.97077,-0.78954 1.51786,-0.53572 0.80286,0.3725 1.0188,1.3968 0.625,2.14286 -0.52488,0.99438 -1.82467,1.2504 -2.76786,0.71429 -1.18691,-0.67464 -1.48318,-2.2534 -0.80357,-3.39286 0.8231,-1.38004 2.68262,-1.71666 4.01786,-0.89286 1.57352,0.97082 1.95056,3.11215 0.98214,4.64286 -1.11808,1.76726 -3.54188,2.18476 -5.26786,1.07143 -1.96117,-1.26504 -2.41916,-3.97175 -1.16071,-5.89286 1.41178,-2.15519 4.40172,-2.6537 6.51785,-1.25 2.34931,1.55838 2.88836,4.83178 1.33929,7.14286"
+       transform="translate(-67.142857,-17.5)"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 244.62183,457.35729 -3.03046,7.38053 -10.01359,2.43873 0.0433,7.97225 15.56199,2.77049 -2.91975,25.98574 4.78134,32.57693 0.53377,28.83452 15.71429,0 -1.93365,-28.55655 20,0.71428 -2.56127,28.01559 15.71428,0 2.72716,-44.97027 -8.8314,-11.38523 -26.97698,-1.24782 -8.39067,-50.44253 z"
+       id="path2997"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3787"
+       sodipodi:cx="263.77609"
+       sodipodi:cy="483.26749"
+       sodipodi:rx="2.1465743"
+       sodipodi:ry="2.1465743"
+       d="m 265.92267,483.26749 a 2.1465743,2.1465743 0 1 1 -4.29315,0 2.1465743,2.1465743 0 1 1 4.29315,0 z"
+       transform="translate(-16.227324,-18.946519)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 328.6884,410.02249 c -2.30939,2.17627 3.53553,8.83883 3.53553,8.83883 l 3.283,0 -2.52538,-6.81853 c 0,0 -3.14212,-3.10498 -4.29315,-2.0203 z"
+       id="path2999-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="scccs" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2.04991364000000020;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 341.03954,409.32418 c 2.36702,2.23058 -3.62377,9.05941 -3.62377,9.05941 l -3.36493,0 2.5884,-6.98869 c 0,0 3.22054,-3.18248 4.4003,-2.07072 z"
+       id="path2999-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="scccs" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 336.91255,417.70495 8.61566,-3.28215 2.46159,9.43617 -9.43617,2.05133 z"
+       id="path3909"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 339.5793,430.013 8.61565,-3.28216 2.46159,9.43617 -9.43615,2.05134 z"
+       id="path3909-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 341.22038,441.50052 8.61565,-3.28215 2.46159,9.43616 -9.43616,2.05134 z"
+       id="path3909-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 343.682,453.39828 8.61565,-3.28215 2.46159,9.43617 -9.43616,2.05135 z"
+       id="path3909-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 345.32306,465.70634 8.61565,-3.28215 2.4616,9.43616 -9.43617,2.05135 z"
+       id="path3909-58"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:3.27598857999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 348.25908,540.37507 1.35913,28.54211 12.82388,-1.57099 -1.12529,-27.65068 12.19657,-0.67958 6.00612,27.86256 8.83447,-0.67959 -2.03872,-26.50339 -1.35916,-17.66894 -27.18297,-14.95063 -16.98935,-90.38339 -5.4366,0.67959 c 0,0 -10.42849,3.86772 -13.21179,8.60058 -1.91141,3.25025 -3.82198,7.14687 -0.86941,9.49204 3.24529,2.57767 12.29835,-1.82688 12.29835,-1.82688 l 13.20395,74.79813 z"
+       id="path3907"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccssccc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#fff1b7;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3787-1"
+       sodipodi:cx="263.77609"
+       sodipodi:cy="483.26749"
+       sodipodi:rx="2.1465743"
+       sodipodi:ry="2.1465743"
+       d="m 265.92267,483.26749 a 2.1465743,2.1465743 0 1 1 -4.29315,0 2.1465743,2.1465743 0 1 1 4.29315,0 z"
+       transform="translate(68.723908,-58.762447)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4022"
+       sodipodi:cx="340.17856"
+       sodipodi:cy="431.46933"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="1.6071428"
+       d="m 341.7857,431.46933 a 1.6071428,1.6071428 0 1 1 -3.21428,0 1.6071428,1.6071428 0 1 1 3.21428,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4024"
+       sodipodi:cx="337.85715"
+       sodipodi:cy="440.57648"
+       sodipodi:rx="1.7857143"
+       sodipodi:ry="1.4285715"
+       d="m 339.64286,440.57648 a 1.7857143,1.4285715 0 1 1 -3.57143,0 1.7857143,1.4285715 0 1 1 3.57143,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4026"
+       sodipodi:cx="343.57144"
+       sodipodi:cy="447.54074"
+       sodipodi:rx="2.5"
+       sodipodi:ry="2.6785715"
+       d="m 346.07144,447.54074 a 2.5,2.6785715 0 1 1 -5,0 2.5,2.6785715 0 1 1 5,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4028"
+       sodipodi:cx="340.17856"
+       sodipodi:cy="456.29074"
+       sodipodi:rx="2.3214285"
+       sodipodi:ry="2.5"
+       d="m 342.49999,456.29074 a 2.3214285,2.5 0 1 1 -4.64286,0 2.3214285,2.5 0 1 1 4.64286,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4030"
+       sodipodi:cx="345.35715"
+       sodipodi:cy="462.18362"
+       sodipodi:rx="1.0714285"
+       sodipodi:ry="0.89285713"
+       d="m 346.42858,462.18362 a 1.0714285,0.89285713 0 1 1 -2.14286,0 1.0714285,0.89285713 0 1 1 2.14286,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4032"
+       sodipodi:cx="343.21429"
+       sodipodi:cy="471.29074"
+       sodipodi:rx="2.5"
+       sodipodi:ry="2.5"
+       d="m 345.71429,471.29074 a 2.5,2.5 0 1 1 -5,0 2.5,2.5 0 1 1 5,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4034"
+       sodipodi:cx="349.10715"
+       sodipodi:cy="479.50504"
+       sodipodi:rx="2.3214285"
+       sodipodi:ry="2.5"
+       d="m 351.42858,479.50504 a 2.3214285,2.5 0 1 1 -4.64286,0 2.3214285,2.5 0 1 1 4.64286,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4036"
+       sodipodi:cx="352.67856"
+       sodipodi:cy="488.79074"
+       sodipodi:rx="0.89285713"
+       sodipodi:ry="1.4285715"
+       d="m 353.57142,488.79074 a 0.89285713,1.4285715 0 1 1 -1.78572,0 0.89285713,1.4285715 0 1 1 1.78572,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4038"
+       sodipodi:cx="346.07144"
+       sodipodi:cy="490.04074"
+       sodipodi:rx="1.4285715"
+       sodipodi:ry="2.6785715"
+       d="m 347.50001,490.04074 a 1.4285715,2.6785715 0 1 1 -2.85714,0 1.4285715,2.6785715 0 1 1 2.85714,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4040"
+       sodipodi:cx="351.07144"
+       sodipodi:cy="495.21933"
+       sodipodi:rx="0.71428573"
+       sodipodi:ry="1.0714285"
+       d="m 351.78573,495.21933 a 0.71428573,1.0714285 0 1 1 -1.42857,0 0.71428573,1.0714285 0 1 1 1.42857,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4042"
+       sodipodi:cx="348.03571"
+       sodipodi:cy="503.43362"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="3.2142856"
+       d="m 349.64285,503.43362 a 1.6071428,3.2142856 0 1 1 -3.21429,0 1.6071428,3.2142856 0 1 1 3.21429,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4044"
+       sodipodi:cx="354.46429"
+       sodipodi:cy="503.61218"
+       sodipodi:rx="0.89285713"
+       sodipodi:ry="1.6071428"
+       d="m 355.35715,503.61218 a 0.89285713,1.6071428 0 1 1 -1.78571,0 0.89285713,1.6071428 0 1 1 1.78571,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4046"
+       sodipodi:cx="364.10715"
+       sodipodi:cy="526.82648"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="1.6071428"
+       d="m 365.71429,526.82648 a 1.6071428,1.6071428 0 1 1 -3.21429,0 1.6071428,1.6071428 0 1 1 3.21429,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4048"
+       sodipodi:cx="373.57144"
+       sodipodi:cy="518.79077"
+       sodipodi:rx="5"
+       sodipodi:ry="2.5"
+       d="m 378.57144,518.79077 a 5,2.5 0 1 1 -10,0 5,2.5 0 1 1 10,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4050"
+       sodipodi:cx="362.32144"
+       sodipodi:cy="512.89789"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="3.3928571"
+       d="m 365.35716,512.89789 a 3.0357144,3.3928571 0 1 1 -6.07143,0 3.0357144,3.3928571 0 1 1 6.07143,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4052"
+       sodipodi:cx="352.32144"
+       sodipodi:cy="516.4693"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="3.75"
+       d="m 355.35716,516.4693 a 3.0357144,3.75 0 1 1 -6.07143,0 3.0357144,3.75 0 1 1 6.07143,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4054"
+       sodipodi:cx="349.28571"
+       sodipodi:cy="530.2193"
+       sodipodi:rx="1.7857143"
+       sodipodi:ry="2.5"
+       d="m 351.07142,530.2193 a 1.7857143,2.5 0 1 1 -3.57143,0 1.7857143,2.5 0 1 1 3.57143,0 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:#000000;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4056"
+       sodipodi:cx="381.25"
+       sodipodi:cy="527.89789"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="2.6785715"
+       d="m 384.28571,527.89789 a 3.0357144,2.6785715 0 1 1 -6.07142,0 3.0357144,2.6785715 0 1 1 6.07142,0 z" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 448.95676,473.55042 8.61565,-3.28215 2.4616,9.43617 -9.43617,2.05134 z"
+       id="path3909-58-3-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 450.73961,485.58467 8.61565,-3.28215 2.4616,9.43617 -9.43617,2.05133 z"
+       id="path3909-58-2-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 429.28452,405.93245 c -2.30939,2.17627 3.53553,8.83883 3.53553,8.83883 l 3.283,0 -2.52538,-6.81853 c 0,0 -3.14212,-3.10498 -4.29315,-2.0203 z"
+       id="path2999-4-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="scccs" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:2.04991364000000020;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 441.63566,405.23414 c 2.36702,2.23058 -3.62377,9.05941 -3.62377,9.05941 l -3.36493,0 2.5884,-6.98869 c 0,0 3.22054,-3.18248 4.4003,-2.07072 z"
+       id="path2999-1-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="scccs" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 437.50867,413.61491 8.61566,-3.28215 2.46159,9.43617 -9.43617,2.05133 z"
+       id="path3909-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 440.17542,425.92296 8.61565,-3.28216 2.46159,9.43617 -9.43615,2.05134 z"
+       id="path3909-5-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 441.8165,437.41048 8.61565,-3.28215 2.46159,9.43616 -9.43616,2.05134 z"
+       id="path3909-7-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 444.27812,449.30824 8.61565,-3.28215 2.46159,9.43617 -9.43616,2.05135 z"
+       id="path3909-8-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:1.14875138000000000px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       d="m 445.91918,461.6163 8.61565,-3.28215 2.4616,9.43616 -9.43617,2.05135 z"
+       id="path3909-58-30"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:3.27598857999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 448.8552,536.28503 1.35913,28.54211 12.82388,-1.57099 -1.12529,-27.65068 12.19657,-0.67958 6.00612,27.86256 8.83447,-0.67959 -2.03872,-26.50339 -1.35916,-17.66894 -27.18297,-14.95063 -16.98935,-90.38339 -5.4366,0.67959 c 0,0 -10.42849,3.86772 -13.21179,8.60058 -1.91141,3.25025 -3.82198,7.14687 -0.86941,9.49204 3.24529,2.57767 12.29835,-1.82688 12.29835,-1.82688 l 13.20395,74.79813 z"
+       id="path3907-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccssccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3787-1-9"
+       sodipodi:cx="263.77609"
+       sodipodi:cy="483.26749"
+       sodipodi:rx="2.1465743"
+       sodipodi:ry="2.1465743"
+       d="m 265.92267,483.26749 a 2.1465743,2.1465743 0 1 1 -4.29315,0 2.1465743,2.1465743 0 1 1 4.29315,0 z"
+       transform="translate(169.32003,-62.852482)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4022-1"
+       sodipodi:cx="340.17856"
+       sodipodi:cy="431.46933"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="1.6071428"
+       d="m 341.7857,431.46933 a 1.6071428,1.6071428 0 1 1 -3.21428,0 1.6071428,1.6071428 0 1 1 3.21428,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4024-3"
+       sodipodi:cx="337.85715"
+       sodipodi:cy="440.57648"
+       sodipodi:rx="1.7857143"
+       sodipodi:ry="1.4285715"
+       d="m 339.64286,440.57648 a 1.7857143,1.4285715 0 1 1 -3.57143,0 1.7857143,1.4285715 0 1 1 3.57143,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4026-4"
+       sodipodi:cx="343.57144"
+       sodipodi:cy="447.54074"
+       sodipodi:rx="2.5"
+       sodipodi:ry="2.6785715"
+       d="m 346.07144,447.54074 a 2.5,2.6785715 0 1 1 -5,0 2.5,2.6785715 0 1 1 5,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4028-7"
+       sodipodi:cx="340.17856"
+       sodipodi:cy="456.29074"
+       sodipodi:rx="2.3214285"
+       sodipodi:ry="2.5"
+       d="m 342.49999,456.29074 a 2.3214285,2.5 0 1 1 -4.64286,0 2.3214285,2.5 0 1 1 4.64286,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4030-4"
+       sodipodi:cx="345.35715"
+       sodipodi:cy="462.18362"
+       sodipodi:rx="1.0714285"
+       sodipodi:ry="0.89285713"
+       d="m 346.42858,462.18362 a 1.0714285,0.89285713 0 1 1 -2.14286,0 1.0714285,0.89285713 0 1 1 2.14286,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4032-6"
+       sodipodi:cx="343.21429"
+       sodipodi:cy="471.29074"
+       sodipodi:rx="2.5"
+       sodipodi:ry="2.5"
+       d="m 345.71429,471.29074 a 2.5,2.5 0 1 1 -5,0 2.5,2.5 0 1 1 5,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4034-3"
+       sodipodi:cx="349.10715"
+       sodipodi:cy="479.50504"
+       sodipodi:rx="2.3214285"
+       sodipodi:ry="2.5"
+       d="m 351.42858,479.50504 a 2.3214285,2.5 0 1 1 -4.64286,0 2.3214285,2.5 0 1 1 4.64286,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4036-6"
+       sodipodi:cx="352.67856"
+       sodipodi:cy="488.79074"
+       sodipodi:rx="0.89285713"
+       sodipodi:ry="1.4285715"
+       d="m 353.57142,488.79074 a 0.89285713,1.4285715 0 1 1 -1.78572,0 0.89285713,1.4285715 0 1 1 1.78572,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4038-5"
+       sodipodi:cx="346.07144"
+       sodipodi:cy="490.04074"
+       sodipodi:rx="1.4285715"
+       sodipodi:ry="2.6785715"
+       d="m 347.50001,490.04074 a 1.4285715,2.6785715 0 1 1 -2.85714,0 1.4285715,2.6785715 0 1 1 2.85714,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4040-2"
+       sodipodi:cx="351.07144"
+       sodipodi:cy="495.21933"
+       sodipodi:rx="0.71428573"
+       sodipodi:ry="1.0714285"
+       d="m 351.78573,495.21933 a 0.71428573,1.0714285 0 1 1 -1.42857,0 0.71428573,1.0714285 0 1 1 1.42857,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4042-8"
+       sodipodi:cx="348.03571"
+       sodipodi:cy="503.43362"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="3.2142856"
+       d="m 349.64285,503.43362 a 1.6071428,3.2142856 0 1 1 -3.21429,0 1.6071428,3.2142856 0 1 1 3.21429,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4044-1"
+       sodipodi:cx="354.46429"
+       sodipodi:cy="503.61218"
+       sodipodi:rx="0.89285713"
+       sodipodi:ry="1.6071428"
+       d="m 355.35715,503.61218 a 0.89285713,1.6071428 0 1 1 -1.78571,0 0.89285713,1.6071428 0 1 1 1.78571,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4046-0"
+       sodipodi:cx="364.10715"
+       sodipodi:cy="526.82648"
+       sodipodi:rx="1.6071428"
+       sodipodi:ry="1.6071428"
+       d="m 365.71429,526.82648 a 1.6071428,1.6071428 0 1 1 -3.21429,0 1.6071428,1.6071428 0 1 1 3.21429,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.96428571,0,0,1.2857143,113.75939,-151.60168)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none"
+       id="path4048-3"
+       sodipodi:cx="373.57144"
+       sodipodi:cy="518.79077"
+       sodipodi:rx="5"
+       sodipodi:ry="2.5"
+       d="m 378.57144,518.79077 a 5,2.5 0 1 1 -10,0 5,2.5 0 1 1 10,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4050-1"
+       sodipodi:cx="362.32144"
+       sodipodi:cy="512.89789"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="3.3928571"
+       d="m 365.35716,512.89789 a 3.0357144,3.3928571 0 1 1 -6.07143,0 3.0357144,3.3928571 0 1 1 6.07143,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4052-5"
+       sodipodi:cx="352.32144"
+       sodipodi:cy="516.4693"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="3.75"
+       d="m 355.35716,516.4693 a 3.0357144,3.75 0 1 1 -6.07143,0 3.0357144,3.75 0 1 1 6.07143,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4054-5"
+       sodipodi:cx="349.28571"
+       sodipodi:cy="530.2193"
+       sodipodi:rx="1.7857143"
+       sodipodi:ry="2.5"
+       d="m 351.07142,530.2193 a 1.7857143,2.5 0 1 1 -3.57143,0 1.7857143,2.5 0 1 1 3.57143,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(100.59612,-4.0900323)"
+       sodipodi:type="arc"
+       style="fill:#020202;fill-opacity:1;stroke:none;stroke-width:2.62500000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4056-2"
+       sodipodi:cx="381.25"
+       sodipodi:cy="527.89789"
+       sodipodi:rx="3.0357144"
+       sodipodi:ry="2.6785715"
+       d="m 384.28571,527.89789 a 3.0357144,2.6785715 0 1 1 -6.07142,0 3.0357144,2.6785715 0 1 1 6.07142,0 z"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\girafe.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 545.37914,446.42928 3.53553,8.83883 3.283,0 -2.52538,-6.81853 z"
+       id="path2999-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 549.04095,446.55555 3.53553,8.83883 3.283,0 -2.52538,-6.81853 z"
+       id="path2999-1-17"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3905-4"
+       sodipodi:cx="361.78571"
+       sodipodi:cy="532.36218"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="5.3571429"
+       sodipodi:argument="-18.206055"
+       sodipodi:t0="0"
+       d="m 361.78571,532.36218 c 0.21487,0.16116 -0.11123,0.36917 -0.26786,0.35715 -0.42446,-0.0326 -0.56588,-0.5501 -0.44643,-0.89286 0.21367,-0.61313 0.97077,-0.78954 1.51786,-0.53572 0.80286,0.3725 1.0188,1.3968 0.625,2.14286 -0.52488,0.99438 -1.82467,1.2504 -2.76786,0.71429 -1.18691,-0.67464 -1.48318,-2.2534 -0.80357,-3.39286 0.8231,-1.38004 2.68262,-1.71666 4.01786,-0.89286 1.57352,0.97082 1.95056,3.11215 0.98214,4.64286 -1.11808,1.76726 -3.54188,2.18476 -5.26786,1.07143 -1.96117,-1.26504 -2.41916,-3.97175 -1.16071,-5.89286 1.41178,-2.15519 4.40172,-2.6537 6.51785,-1.25 2.34931,1.55838 2.88836,4.83178 1.33929,7.14286"
+       transform="translate(233.84424,-21.123289)"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#fff1b7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 545.60893,453.734 -3.03046,7.38053 -10.01359,2.43873 0.0433,7.97225 15.56199,2.77049 -2.91975,25.98574 4.78134,32.57693 0.53377,28.83452 15.71429,0 -1.93365,-28.55655 20,0.71428 -2.56127,28.01559 15.71428,0 2.72716,-44.97027 -8.8314,-11.38523 -26.97698,-1.24782 -8.39067,-50.44253 z"
+       id="path2997-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3787-2"
+       sodipodi:cx="263.77609"
+       sodipodi:cy="483.26749"
+       sodipodi:rx="2.1465743"
+       sodipodi:ry="2.1465743"
+       d="m 265.92267,483.26749 a 2.1465743,2.1465743 0 1 1 -4.29315,0 2.1465743,2.1465743 0 1 1 4.29315,0 z"
+       transform="translate(284.75978,-22.569809)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png" />
+  </g>
+</svg>
