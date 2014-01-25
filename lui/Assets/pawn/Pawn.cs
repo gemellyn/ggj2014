@@ -30,7 +30,7 @@ public class Pawn : MonoBehaviour {
 
         transform.FindChild("sprite").transform.LookAt(Camera.main.transform.position);
 
-        if (Vector3.Dot(transform.forward,Camera.main.transform.forward) > 0 && eyeCheckTimer <= 0)
+        /*if (Vector3.Dot(transform.forward,Camera.main.transform.forward) > 0 && eyeCheckTimer <= 0)
             transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;
         else
             transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = face;
@@ -39,7 +39,7 @@ public class Pawn : MonoBehaviour {
             transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = face;
 
         if (dosJoueur)
-            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;
+            transform.FindChild("sprite").GetComponent<SpriteRenderer>().sprite = back;*/
 
 
         if(eyeCheckTimer >= 0)
