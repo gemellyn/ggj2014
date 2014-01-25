@@ -39,7 +39,8 @@ public class PickableObject : MonoBehaviour {
             luiStatus = "IN";
             PPS2.Play(true) ;
             this.used = true ;
-
+            IA luiIA = other.gameObject.GetComponent("IA") as IA ;
+            luiIA.addRumination(-this.delight) ;
         }
 	}
 
