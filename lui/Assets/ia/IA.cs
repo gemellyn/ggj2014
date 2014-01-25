@@ -72,6 +72,12 @@ public class IA : MonoBehaviour {
             print("joyeux");
         }
 
+        if(player.GetComponent<PlayerPick>().getObject() != null)
+            pawn.fixeLeJoueur(true);
+        else
+            pawn.fixeLeJoueur(false);
+
+
         timerEyeCheck -= Time.deltaTime;
         if (timerEyeCheck < 0)
         {
