@@ -26,8 +26,13 @@ public class Pawn : MonoBehaviour {
 
     void launchAnim(string anim)
     {
+        
+
         if (blockAnims)
             return;
+        if (!audio.isPlaying)
+            audio.Play();
+
         if(actualAnim != anim)   
             transform.FindChild("sprite").GetComponent<Animator>().SetBool(anim, true);
         actualAnim = anim;
@@ -62,6 +67,17 @@ public class Pawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKey(KeyCode.F1)) 
+            launchAnimEvent("Kite");
+        if (Input.GetKey(KeyCode.F2))
+            launchAnimEvent("BackFlying");
+        if (Input.GetKey(KeyCode.F3))
+            launchAnimEvent("Umbrella");
+        if (Input.GetKey(KeyCode.F4))
+            launchAnimEvent("Balloon");
+        if (Input.GetKey(KeyCode.F5))
+            launchAnimEvent("BackJump");
 
         if (dead)
             return;
@@ -127,4 +143,26 @@ public class Pawn : MonoBehaviour {
     {
         GUI.Label(new Rect(200, 5, 180, 20), eyeCheckTimer.ToString());
     }
+
+    
+               
+			/*} 
+            else if (name.Equals("Girafe")|| Input.GetKey(KeyCode.F2)) {
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackJump");
+
+            }
+            else if (name.Equals("Alpaga") || Input.GetKey(KeyCode.F3))
+            {
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("Umbrella");
+
+            }
+            else if (name.Equals("Shop") || Input.GetKey(KeyCode.F4))
+            {
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
+			}
+            else if (name.Equals("Sapin") || Input.GetKey(KeyCode.F5))
+            {
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackJump");
+
+            }*/
 }

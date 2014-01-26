@@ -3,10 +3,11 @@ using System.Collections;
 
 public class PlayAudio : MonoBehaviour {
 
+    public AudioSource audio;
 	// Use this for initialization
     void OnEnable()
     {
-        GetComponent<AudioSource>().Play();
+        audio.Play();
 	}
 	
 	// Update is called once per frame
