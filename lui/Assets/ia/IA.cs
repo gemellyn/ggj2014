@@ -6,6 +6,8 @@ public class IA : MonoBehaviour {
     private float timeStop;
 
     public Transform player = null;
+	public AudioSource ambiance;
+
     private Pawn pawn;
 
     //Rumination
@@ -225,6 +227,14 @@ public class IA : MonoBehaviour {
         //Updates jauges;
 
         rumination += Time.deltaTime * ruminPerSec;
+
+		float pitch = rumination / 100.0f;
+		pitch = 1 - pitch;
+		float minPitch = 0.5f;
+		float maxPitch = 1.0f;
+		ambiance.pitch = (pitch * (maxPitch - minPitch)) + minPitch;
+		print("PITCH BITCH: " + ambiance.pitch);
+
 
         //Test jauges
         if (rumination >= 100)
