@@ -17,7 +17,7 @@ public class flowerDanger : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals("Lui")) {
             IA luiIA = other.gameObject.GetComponent("IA") as IA;
-            luiIA.setRuminationSpeed(10.0f);
+            luiIA.setRuminationSpeed(7.5f);
 		}
 	}
     
