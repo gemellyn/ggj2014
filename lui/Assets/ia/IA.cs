@@ -13,11 +13,6 @@ public class IA : MonoBehaviour {
     const float ruminPerSecBase =0.5f;
     const float ruminPerSecPlayerNear = 0.5f; 
 
-    //Autiste
-    private float autiste = 0;
-    const float autistePerSecBase = ruminPerSecBase;
-    const float autistePerSecPlayerNear = ruminPerSecPlayerNear; 
-
     //Eye check
     float timerEyeCheck = 0;
     const float periodEyeCheck = 2;
@@ -215,12 +210,6 @@ public class IA : MonoBehaviour {
 
         rumination += Time.deltaTime * ruminPerSec;
 
-        float autistePerSec = autistePerSecBase;
-        if (playerNear)
-            autistePerSec = autistePerSecPlayerNear;
-
-        autiste += Time.deltaTime * autistePerSec;
-
         //Test jauges
         if (rumination >= 100)
         {
@@ -228,13 +217,13 @@ public class IA : MonoBehaviour {
             pawn.suicide();
         }
 
-        //Test jauges
+        //Etat
         state = STATE_AI.STATE_JOYEUX;
-        if (autiste >= 70)
+        if (rumination >= 70)
             state = STATE_AI.STATE_TRANQUILLE;
-        if (autiste >= 80)
+        if (rumination >= 80)
             state = STATE_AI.STATE_PROSTRE;
-        if (autiste >= 90)
+        if (rumination >= 90)
             state = STATE_AI.STATE_SE_BARRE;
 
 
