@@ -40,6 +40,8 @@ public class IA : MonoBehaviour {
     const float speedProstre = 1.0f;
     const float speedSeBarre = 2.0f;
 
+    public bool stopMoving = false;
+
     //Etats
     public enum STATE_AI
     {
@@ -55,6 +57,9 @@ public class IA : MonoBehaviour {
     {
         rumination += value;
     }
+
+   
+
 
     public STATE_AI getState()
     {
@@ -185,6 +190,9 @@ public class IA : MonoBehaviour {
             //transform.FindChild("sprite").renderer.enabled = false;
             return;
         }
+
+        if(stopMoving)
+            GetComponent<NavMeshAgent>().ResetPath();
 
         drawDebugStuff();
 

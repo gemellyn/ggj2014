@@ -94,6 +94,13 @@ public class Pawn : MonoBehaviour {
         print("suicide done");
         dead = true;   
     }
+
+    public void launchAnimEvent(string animName)
+    {
+        print("launchAnimEvent " + animName);
+        transform.FindChild("sprite").GetComponent<Animator>().SetBool(animName, true);
+    }
+
     public bool isDead()
     {
         return dead;
