@@ -94,7 +94,7 @@ public class Pawn : MonoBehaviour {
     public void suicide()
     {
         transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", true);
-        dead = true;   
+        dead = true;
     }
 
     public void launchAnimEvent(string animName)
