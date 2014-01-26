@@ -31,8 +31,12 @@ public class IA : MonoBehaviour {
     float playerSpeed;
 
     //Vitesse IA
-    const float speedJoyeux = 5f;
+    /*const float speedJoyeux = 5f;
     const float speedTranquille = 3.0f;
+    const float speedProstre = 1.0f;
+    const float speedSeBarre = 2.0f;*/
+    const float speedJoyeux = 7.5f;
+    const float speedTranquille = 4.5f;
     const float speedProstre = 1.0f;
     const float speedSeBarre = 2.0f;
 
