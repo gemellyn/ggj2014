@@ -35,7 +35,7 @@ public class PickableObject : MonoBehaviour {
                 this.pickable = true;
                 PPS.Play(false);
             }
-		}else if (!this.used && other.gameObject.name == "lui"){
+		}else if (!this.used && !this.picked && other.gameObject.name == "lui"){
             luiStatus = "IN";
             PPS2.Play(true) ;
             this.used = true ;
@@ -66,10 +66,10 @@ public class PickableObject : MonoBehaviour {
 
     public void OnGUI(){
         /*GUI.Label(new Rect(600, 5, 180, 20), "Lui in trigger: " + luiStatus.ToString());*/
-        if (trackIt)
+        if (trackIt || 1 == 1)
         {
             GUI.Label(new Rect(600, 55, 180, 20), "Pickable ?: " + this.pickable.ToString());
-            GUI.Label(new Rect(600, 05, 180, 20), "Emitter ?: " + PPS.isPlaying.ToString());
+            GUI.Label(new Rect(600, 05, 180, 20), "Lui ?: " + luiStatus.ToString());
         }
     }
 }
