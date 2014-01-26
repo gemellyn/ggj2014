@@ -7,6 +7,7 @@ public class IA : MonoBehaviour {
 
     public Transform player = null;
 	public AudioSource ambiance;
+    public AudioSource happySound;
 
     private Pawn pawn;
 
@@ -237,6 +238,7 @@ public class IA : MonoBehaviour {
 		float minPitch = 0.5f;
 		float maxPitch = 1.0f;
 		ambiance.pitch = (pitch * (maxPitch - minPitch)) + minPitch;
+        happySound.pitch = (pitch * (maxPitch - minPitch)) + minPitch;
 		print("PITCH BITCH: " + ambiance.pitch);
 
 
@@ -283,7 +285,7 @@ public class IA : MonoBehaviour {
 
     public void OnGUI()
     {
-        GUI.Label(new Rect(5, 5, 180, 20), "rumination: " + rumination.ToString());
+       /* GUI.Label(new Rect(5, 5, 180, 20), "rumination: " + rumination.ToString());
         GUI.Label(new Rect(5, 25, 180, 20), "timeStop: " + timeStop.ToString());
         GUI.Label(new Rect(5, 45, 180, 20), "timerEyeCheck: " + timerEyeCheck.ToString());
         switch (state)
@@ -300,6 +302,6 @@ public class IA : MonoBehaviour {
             case STATE_AI.STATE_SE_BARRE:
                 GUI.Label(new Rect(5, 65, 180, 20), "STATE_SE_BARRE");
                 break;
-        }
+        }*/
     }
 }

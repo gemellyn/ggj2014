@@ -142,7 +142,7 @@ public class Pawn : MonoBehaviour {
 
     public void OnGUI()
     {
-        GUI.Label(new Rect(200, 5, 180, 20), eyeCheckTimer.ToString());
+       // GUI.Label(new Rect(200, 5, 180, 20), eyeCheckTimer.ToString());
     }
 
     
