@@ -176,5 +176,23 @@ TextureImporter:
         height: 1328
       alignment: 9
       pivot: {x: .433985353, y: 0}
+    - name: come_around
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 0
+        width: 1129
+        height: 1322
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: leave_around
+      rect:
+        serializedVersion: 2
+        x: 3913
+        y: 0
+        width: 1165
+        height: 1326
+      alignment: 7
+      pivot: {x: .5, y: 0}
   spritePackingTag: 
   userData: 
