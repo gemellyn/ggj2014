@@ -12,11 +12,10 @@ public class Billboard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector2 newVec;
+		Vector3 newVec = Camera.main.transform.position;
 		if (noBending) {
-			//newVec = 
-			//transform.position.y = Camera.main.transform.position.y;
+			newVec.y = transform.position.y;
 		}
-		transform.LookAt(Camera.main.transform.position);
+		transform.LookAt(newVec);
 	}
 }
