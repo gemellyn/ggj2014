@@ -10,13 +10,13 @@ public class IA : MonoBehaviour {
 
     //Rumination
     private float rumination = 0;
-    const float ruminPerSecBase =2;
-    const float ruminPerSecPlayerNear = 1; 
+    const float ruminPerSecBase =0.5f;
+    const float ruminPerSecPlayerNear = 0.5f; 
 
     //Autiste
     private float autiste = 0;
-    const float autistePerSecBase = 2;
-    const float autistePerSecPlayerNear = 1; 
+    const float autistePerSecBase = ruminPerSecBase;
+    const float autistePerSecPlayerNear = ruminPerSecPlayerNear; 
 
     //Eye check
     float timerEyeCheck = 0;
@@ -35,8 +35,8 @@ public class IA : MonoBehaviour {
     float playerSpeed;
 
     //Vitesse IA
-    const float speedJoyeux = 3.5f;
-    const float speedTranquille = 2.0f;
+    const float speedJoyeux = 5f;
+    const float speedTranquille = 3.0f;
     const float speedProstre = 1.0f;
     const float speedSeBarre = 2.0f;
 
@@ -217,9 +217,9 @@ public class IA : MonoBehaviour {
 
         //Test jauges
         state = STATE_AI.STATE_JOYEUX;
-        if (autiste >= 40)
-            state = STATE_AI.STATE_TRANQUILLE;
         if (autiste >= 70)
+            state = STATE_AI.STATE_TRANQUILLE;
+        if (autiste >= 80)
             state = STATE_AI.STATE_PROSTRE;
         if (autiste >= 90)
             state = STATE_AI.STATE_SE_BARRE;
