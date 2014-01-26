@@ -30,6 +30,7 @@ public class AnimEventManager : MonoBehaviour {
     {
         print("blockOtherAnims");
         pawn.blockAnims = false;
+        pawn.actualAnim = "";
     }
 
      
