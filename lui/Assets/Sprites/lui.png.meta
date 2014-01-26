@@ -203,5 +203,14 @@ TextureImporter:
         height: 1733
       alignment: 9
       pivot: {x: .311668187, y: 2.16552642e-08}
+    - name: lui_18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 1380
+        height: 1738
+      alignment: 9
+      pivot: {x: .297076494, y: .00767246448}
   spritePackingTag: 
   userData: 
