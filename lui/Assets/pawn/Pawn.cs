@@ -53,9 +53,9 @@ public class Pawn : MonoBehaviour {
 
             case IA.STATE_AI.STATE_PROSTRE:
                 if (leave)
-                    launchAnim("StandLeave");
+                    launchAnim("LeaveStand");
                 else
-                    launchAnim("StandCome");
+                    launchAnim("ComeStand");
                 break;
         }
     }
