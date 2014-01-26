@@ -41,7 +41,7 @@ public class IA : MonoBehaviour {
     const float speedSeBarre = 2.0f;
 
     //Etats
-    private enum STATE_AI
+    public enum STATE_AI
     {
         STATE_JOYEUX,
         STATE_TRANQUILLE,
@@ -54,6 +54,11 @@ public class IA : MonoBehaviour {
     public void addRumination(float value)
     {
         rumination += value;
+    }
+
+    public STATE_AI getState()
+    {
+        return state;
     }
 
 
@@ -101,6 +106,8 @@ public class IA : MonoBehaviour {
             GetComponent<NavMeshAgent>().destination = player.transform.position + (player.transform.forward * distForwardJoyeux) +  new Vector3(Random.Range(-zoneJoyeux/2, zoneJoyeux/2), 0, Random.Range(-zoneJoyeux/2, zoneJoyeux/2));
             print("follow go " + playerSpeed);
         }
+
+
     }
 
     //Il joue dans son coin

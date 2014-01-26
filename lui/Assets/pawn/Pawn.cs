@@ -13,19 +13,51 @@ public class Pawn : MonoBehaviour {
     bool fixeJoueur = false;
     bool dosJoueur = false;
 
+    string actualAnim;
+
+    private IA ia;
+
 	// Use this for initialization
 	void Start () {
-	
+        ia = GetComponent<IA>();
 	}
+
+    void launchAnim(string anim)
+    {
+        if(actualAnim != anim)   
+            transform.FindChild("sprite").GetComponent<Animator>().SetBool(anim, true);
+        actualAnim = anim;
+    }
+
+    void setAnimWalk(bool leave)
+    {
+        switch (ia.getState())
+        {
+            case IA.STATE_AI.STATE_JOYEUX :
+                if(leave)
+                    launchAnim("Leave");
+                else
+                    launchAnim("Come");
+                break;
+            case IA.STATE_AI.STATE_TRANQUILLE :
+            case IA.STATE_AI.STATE_SE_BARRE:
+                if (leave)
+                    launchAnim("LeaveCalm");
+                else
+                    launchAnim("ComeCalm");
+                break;
+
+            case IA.STATE_AI.STATE_PROSTRE:
+                if (leave)
+                    launchAnim("StandLeave");
+                else
+                    launchAnim("StandCome");
+                break;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if(transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Suicide"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", false);
-        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Come"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", false);
-        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Leave"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
 
         if (dead)
             return;
@@ -36,38 +68,27 @@ public class Pawn : MonoBehaviour {
         if (Vector3.Dot((transform.position - Camera.main.transform.position).normalized, transform.forward) > 0)
             comeToPlayer = false;
 
-        
         if (fixeJoueur)
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", true);
+            setAnimWalk(false);
 
         if (dosJoueur )
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
+            setAnimWalk(true);
 
         if (!fixeJoueur && !dosJoueur)
         {
-            print("base");
             if(comeToPlayer || eyeCheckTimer >= 0)
-                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", true);
+                setAnimWalk(false);
             else
-                transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", true);
-        }
-            
+                setAnimWalk(true);
+        }         
         
         if (eyeCheckTimer >= 0)
             eyeCheckTimer -= Time.deltaTime;
 
-        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Suicide"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", false);
-        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Come"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Come", false);
-        if (transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Leave"))
-            transform.FindChild("sprite").GetComponent<Animator>().SetBool("Leave", false);
-	}
+    }
 
     public void suicide()
     {
-        //if(! Gun1.isPlaying)
-            //Gun1.Play();
         transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", true);
        
         print("suicide done");

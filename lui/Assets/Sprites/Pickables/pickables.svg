@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="552.6709"
-     inkscape:cy="580.61425"
+     inkscape:zoom="1.979899"
+     inkscape:cx="379.92299"
+     inkscape:cy="347.02917"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -737,5 +737,45 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\alpaga.png" />
+    <path
+       style="fill:#e9e9e9;fill-opacity:1;stroke:none"
+       d="m 351.78195,758.42117 c 2.25421,3.54233 2.05858,39.11346 2.05858,39.11346 l 39.93689,0.41171 -0.82343,-40.34861 34.1728,0.41172 1.23516,39.52518 40.3486,0 4.94066,-39.11346 c 0,0 33.47562,-44.52988 31.29076,-69.99248 -1.80933,-21.086 -17.10929,-42.06764 -35.40796,-52.70022 -22.607,-13.13594 -53.71928,-14.87492 -78.22689,-5.76408 -32.74606,12.17354 -74.1097,74.10967 -74.1097,74.10967 z"
+       id="path3058"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scccccccasscs"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\elephant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#cfcfcf;fill-opacity:1;stroke:none"
+       d="m 361.44226,619.02692 c 4.2283,-2.95866 47.90366,-5.09006 56.822,-2.75434 8.9184,2.33572 30.12676,13.67998 32.86936,16.97173 2.74264,3.29176 17.45204,28.98158 18.27093,36.65907 0.81887,7.67751 -5.18106,36.62738 -7.10481,41.01313 -1.92376,4.38574 -13.13269,23.73628 -16.92302,28.55965 -3.79023,4.82334 -22.84619,20.11148 -26.93641,21.56227 -4.09021,1.45075 -20.53195,4.81359 -25.99342,4.61849 -5.46152,-0.19529 -32.51653,-10.57484 -36.33056,-12.13988 -3.81398,-1.56507 -28.43814,-23.45158 -28.43814,-23.45158 l -6.33973,-15.61182 -16.33434,9.66849 -24.43966,46.64412 -7.41914,-2.7438 6.10991,-52.52362 c 0,0 11.44286,-50.78892 29.67665,-69.37822 14.44596,-14.72761 52.51038,-27.09369 52.51038,-27.09369 z"
+       id="path3060"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssscssccccccsc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\elephant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="path3787-1-9-5"
+       sodipodi:cx="263.77609"
+       sodipodi:cy="483.26749"
+       sodipodi:rx="2.1465743"
+       sodipodi:ry="2.1465743"
+       d="m 265.92267,483.26749 a 2.1465743,2.1465743 0 1 1 -4.29315,0 2.1465743,2.1465743 0 1 1 4.29315,0 z"
+       transform="matrix(2.4116488,0,0,2.2516203,-322.07213,-413.87223)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\elephant.png" />
+    <path
+       style="fill:#e9e9e9;fill-opacity:1;stroke:none"
+       d="m 274.5518,678.29801 c 0,0 13.14251,17.32908 22.78334,23.55665 6.62789,4.28135 24.35894,9.01067 24.35894,9.01067 l -3.31287,5.32053 c 0,0 -20.20963,-3.9093 -26.56306,-8.87158 -9.36662,-7.31571 -17.26635,-29.01627 -17.26635,-29.01627 z"
+       id="path3856"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccsc"
+       inkscape:export-filename="C:\Users\guillaume\Desktop\ggj2014\lui\Assets\Sprites\elephant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
