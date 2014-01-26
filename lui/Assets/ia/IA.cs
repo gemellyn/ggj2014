@@ -10,8 +10,9 @@ public class IA : MonoBehaviour {
 
     //Rumination
     private float rumination = 0;
-    const float ruminPerSecBase =0.5f;
-    const float ruminPerSecPlayerNear = 0.5f; 
+
+    private const float ruminPerSecBase =0.5f;
+    private float ruminPerSec = ruminPerSecBase; 
 
     //Eye check
     float timerEyeCheck = 0;
@@ -56,6 +57,16 @@ public class IA : MonoBehaviour {
     public void setRumination(float value)
     {
         rumination = value;
+    }
+
+    public void setRuminationSpeed(float value)
+    {
+        ruminPerSec = value;
+    }
+
+    public void resetRuminationSpeed()
+    {
+        ruminPerSec = ruminPerSecBase;
     }
 
    
@@ -212,9 +223,6 @@ public class IA : MonoBehaviour {
         playerSpeed = (lastPlayerPos - player.transform.position).magnitude / Time.deltaTime;
 
         //Updates jauges;
-        float ruminPerSec = ruminPerSecBase;
-        if (playerNear)
-            ruminPerSec = ruminPerSecPlayerNear;
 
         rumination += Time.deltaTime * ruminPerSec;
 

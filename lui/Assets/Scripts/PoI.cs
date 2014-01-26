@@ -15,33 +15,43 @@ public class PoI : MonoBehaviour {
 	
 	}
 
+
 	void OnTriggerEnter(Collider other) {
+
+       
 		if (other.tag.Equals("Lui")) {
+            IA luiIA = other.gameObject.GetComponent("IA") as IA;
+
             collider.enabled = false;
 
-            if (!used){
-                IA luiIA = other.gameObject.GetComponent("IA") as IA;
-                luiIA.addRumination(-20);
-                used = true;
-            }
-			if (name.Equals("Elephant")) {
-
+			if (name.Equals("Elephant") ) {
+                 luiIA.setRumination(20);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackFlying");
-			} else if (name.Equals("Girafe")) {
+			} 
+            else if (name.Equals("Girafe")) {
+                 luiIA.setRumination(20);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Kite");
 
-			} else if (name.Equals("Alpaga")) {
+            }
+            else if (name.Equals("Alpaga"))
+            {
+                 luiIA.setRumination(20);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Umbrella");
 
-			} else if (name.Equals("Shop")) {
-                other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
-
             }
-            else if (name.Equals("Sapin"))
+            else if (name.Equals("Shop") )
             {
-                //other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
-                //which one =
+                 luiIA.setRumination(20);
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
+			}
+            else if (name.Equals("Sapin") )
+            {
+                 luiIA.setRumination(20);
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackJump");
+
             }
 		}
 	}
+
+    
 }
