@@ -180,6 +180,9 @@ public class IA : MonoBehaviour {
             Debug.DrawLine(transform.position + transform.up, player.position, Color.magenta);
         else
             Debug.DrawLine(transform.position + transform.up, player.position, Color.blue);
+
+        Debug.DrawLine(player.transform.position + (player.transform.forward * distForwardJoyeux) + new Vector3(-zoneJoyeux / 2,0, -zoneJoyeux / 2), player.transform.position + (player.transform.forward * distForwardJoyeux) + new Vector3(zoneJoyeux / 2,0, zoneJoyeux / 2), Color.magenta);
+        Debug.DrawLine(player.transform.position + (player.transform.forward * distForwardJoyeux) + new Vector3(-zoneJoyeux / 2,0, zoneJoyeux / 2), player.transform.position + (player.transform.forward * distForwardJoyeux) + new Vector3(zoneJoyeux / 2,0, -zoneJoyeux / 2), Color.magenta);
     }
 	
 	// Update is called once per frame
