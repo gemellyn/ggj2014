@@ -6,6 +6,7 @@ public class PlayerPick : MonoBehaviour {
 	private GameObject hitObject ;
     private Transform transformToMove;
 	private RaycastHit hit ;
+    private RaycastHit hit2;
 
     private Transform PP;
     private PickableObject po;
@@ -17,20 +18,33 @@ public class PlayerPick : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("e")) {
+        Vector3 pos = new Vector3(transform.position.x + transform.forward.x * 2.0f, transform.position.y + 10.0f, transform.position.z + transform.forward.z * 2.0f);
+        //Debug.DrawLine(pos, pos-transform.up*100.0f, Color.red);
+        
+        if(Input.GetKeyDown("e")) {
 
             //Debug.DrawLine(Camera.main.transform.position, Camera.main.transform.position+Camera.main.transform.forward * 10.0f, Color.red);
             if (hitObject != null){
-                hitObject.collider.enabled = true;
-                hitObject.transform.rigidbody.isKinematic = false;
-
-                transformToMove.parent = null;
-                BoxCollider bc = hitObject.transform.GetComponent("BoxCollider") as BoxCollider;
-                transformToMove.position = new Vector3(transform.position.x + transform.forward.x, transform.position.y, transform.position.z + transform.forward.z);
+               
+                //transformToMove.position = new Vector3(transform.position.x + transform.forward.x, transform.position.y, transform.position.z + transform.forward.z);
                 RaycastHit hit = new RaycastHit() ;
-                if (Physics.Raycast(transformToMove.position, -transformToMove.up, out hit, Mathf.Infinity))
+
+                //Vector3 pos = new Vector3(transform.position.x + transform.forward.x * 2.0f, transform.position.y + 10.0f, transform.position.z + transform.forward.z * 2.0f);
+        
+                if (Physics.Raycast(pos, -hitObject.transform.up*100.0f, out hit, Mathf.Infinity))
                 {
-                    transformToMove.position = new Vector3(transformToMove.position.x, hit.point.y, transformToMove.position.z);
+                    //Debug.DrawRay(pos, -hitObject.transform.up * 100.0f, Color.blue, 10.0f);
+                    hitObject.collider.enabled = true;
+                    hitObject.transform.rigidbody.isKinematic = true;
+                    
+                    transformToMove.parent = null;
+                    BoxCollider bc = hitObject.transform.GetComponent("BoxCollider") as BoxCollider;
+                    //Debug.DrawLine(pos, hit.point, Color.black,10.0f);
+                    transformToMove.position = new Vector3(hit.point.x, hit.point.y+bc.size.y, hit.point.z);
+                    if (Physics.Raycast(hit.point, transformToMove.position-hit.point , out hit2, Mathf.Infinity)){
+                        transformToMove.position = new Vector3(transformToMove.position.x, transformToMove.position.y-hit2.distance, transformToMove.position.z);
+                        //Debug.DrawRay(hit.point, transformToMove.position - hit.point, Color.blue, 10.0f);
+                    }
                 }
                 
                 hitObject = null;
@@ -58,18 +72,6 @@ public class PlayerPick : MonoBehaviour {
                 }
             }
 		}
-		/*
-		if(Input.GetKey("f")&& hitObject != null){
-            Transform PP = hitObject.transform.Find("PickableProximity");
-            PickableObject po = PP.GetComponent("PickableObject") as PickableObject;
-			hitObject.transform.parent.transform.parent = null;
-            hitObject.transform.parent.transform.position = transform.position + transform.forward ;
-			hitObject.transform.rigidbody.isKinematic = false;
-            hitObject.collider.enabled = true;
-			hitObject = null;
-            po.picked = false;
-		}*/
-
 	}
 
     public Transform getObject(){
