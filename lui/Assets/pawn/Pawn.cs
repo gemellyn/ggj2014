@@ -13,7 +13,7 @@ public class Pawn : MonoBehaviour {
     bool fixeJoueur = false;
     bool dosJoueur = false;
 
-    string actualAnim;
+    public string actualAnim;
 
     private IA ia;
 
