@@ -17,6 +17,8 @@ public class Pawn : MonoBehaviour {
 
     private IA ia;
 
+    public bool blockAnims;
+
 	// Use this for initialization
 	void Start () {
         ia = GetComponent<IA>();
@@ -24,6 +26,8 @@ public class Pawn : MonoBehaviour {
 
     void launchAnim(string anim)
     {
+        if (blockAnims)
+            return;
         if(actualAnim != anim)   
             transform.FindChild("sprite").GetComponent<Animator>().SetBool(anim, true);
         actualAnim = anim;
@@ -90,8 +94,6 @@ public class Pawn : MonoBehaviour {
     public void suicide()
     {
         transform.FindChild("sprite").GetComponent<Animator>().SetBool("Suicide", true);
-       
-        print("suicide done");
         dead = true;   
     }
 

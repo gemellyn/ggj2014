@@ -20,6 +20,18 @@ public class AnimEventManager : MonoBehaviour {
         ia.stopMoving = true;
     }
 
+    public void blockOtherAnims()
+    {
+        print("blockOtherAnims");
+        pawn.blockAnims = true;
+    }
+
+    public void allowOtherAnims()
+    {
+        print("blockOtherAnims");
+        pawn.blockAnims = false;
+    }
+
      
 
     // Use this for initialization

@@ -25,6 +25,7 @@ public class PoI : MonoBehaviour {
 			if (name.Equals("Elephant")) {
 
 			} else if (name.Equals("Girafe")) {
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("Kite");
 
 			} else if (name.Equals("Alpaga")) {
 
