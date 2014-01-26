@@ -30,7 +30,9 @@ public class PickableObject : MonoBehaviour {
     }
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.name == "player") {
+        if (trackIt)
+            print("enter");
+        if (other.gameObject.name == "player") {
             if (!this.picked){
                 this.pickable = true;
                 PPS.Play(false);
@@ -66,7 +68,7 @@ public class PickableObject : MonoBehaviour {
 
     public void OnGUI(){
         /*GUI.Label(new Rect(600, 5, 180, 20), "Lui in trigger: " + luiStatus.ToString());*/
-        if (trackIt || 1 == 1)
+        if (trackIt)
         {
             GUI.Label(new Rect(600, 55, 180, 20), "Pickable ?: " + this.pickable.ToString());
             GUI.Label(new Rect(600, 05, 180, 20), "Lui ?: " + luiStatus.ToString());
