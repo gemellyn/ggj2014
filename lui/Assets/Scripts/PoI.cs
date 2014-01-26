@@ -17,6 +17,8 @@ public class PoI : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals("Lui")) {
+            collider.enabled = false;
+
             if (!used){
                 IA luiIA = other.gameObject.GetComponent("IA") as IA;
                 luiIA.addRumination(-20);
@@ -24,6 +26,7 @@ public class PoI : MonoBehaviour {
             }
 			if (name.Equals("Elephant")) {
 
+                other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackFlying");
 			} else if (name.Equals("Girafe")) {
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Kite");
 
