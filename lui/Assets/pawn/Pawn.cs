@@ -6,7 +6,6 @@ public class Pawn : MonoBehaviour {
     public AudioSource Gun1 = null;
     private bool dead = false;
     private float eyeCheckTimer = 0;
-    public bool isCalm = false;
 
     public Sprite face;
     public Sprite back;
@@ -14,9 +13,11 @@ public class Pawn : MonoBehaviour {
     bool fixeJoueur = false;
     bool dosJoueur = false;
 
+    private IA ia;
+
 	// Use this for initialization
 	void Start () {
-	
+        ia = GetComponent<IA>();
 	}
 
     void launchAnim(string anim)
@@ -27,14 +28,29 @@ public class Pawn : MonoBehaviour {
 
     void setAnimWalk(bool leave)
     {
-        if (isCalm && leave)
-            launchAnim("LeaveCalm");
-        if (isCalm && !leave)
-            launchAnim("ComeCalm");
-        if (!isCalm && leave)
-            launchAnim("Leave");
-        if (!isCalm && !leave)
-            launchAnim("Come");
+        switch (ia.getState())
+        {
+            case IA.STATE_AI.STATE_JOYEUX :
+                if(leave)
+                    launchAnim("Leave");
+                else
+                    launchAnim("Come");
+                break;
+            case IA.STATE_AI.STATE_TRANQUILLE :
+            case IA.STATE_AI.STATE_SE_BARRE:
+                if (leave)
+                    launchAnim("LeaveCalm");
+                else
+                    launchAnim("ComeCalm");
+                break;
+
+            case IA.STATE_AI.STATE_PROSTRE:
+                if (leave)
+                    launchAnim("StandLeave");
+                else
+                    launchAnim("StandCome");
+                break;
+        }
     }
 	
 	// Update is called once per frame
