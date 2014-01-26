@@ -13,6 +13,8 @@ public class Pawn : MonoBehaviour {
     bool fixeJoueur = false;
     bool dosJoueur = false;
 
+    string actualAnim;
+
     private IA ia;
 
 	// Use this for initialization
@@ -22,8 +24,9 @@ public class Pawn : MonoBehaviour {
 
     void launchAnim(string anim)
     {
-        if(transform.FindChild("sprite").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName(anim) == false)
+        if(actualAnim != anim)   
             transform.FindChild("sprite").GetComponent<Animator>().SetBool(anim, true);
+        actualAnim = anim;
     }
 
     void setAnimWalk(bool leave)
