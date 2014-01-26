@@ -35,7 +35,7 @@ public class PickableObject : MonoBehaviour {
                 this.pickable = true;
                 PPS.Play(false);
             }
-		}else if (!this.used && !this.picked && other.gameObject.name == "lui"){
+		}else if (!this.used && this.picked && other.gameObject.name == "lui"){
             luiStatus = "IN";
             PPS2.Play(true) ;
             this.used = true ;

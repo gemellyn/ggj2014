@@ -36,7 +36,12 @@ public class PoI : MonoBehaviour {
 			} else if (name.Equals("Shop")) {
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
 
-			}
+            }
+            else if (name.Equals("Sapin"))
+            {
+                //other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
+                //which one =
+            }
 		}
 	}
 }
