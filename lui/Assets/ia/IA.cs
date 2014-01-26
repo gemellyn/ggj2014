@@ -58,6 +58,11 @@ public class IA : MonoBehaviour {
         rumination += value;
     }
 
+    public void setRumination(float value)
+    {
+        rumination = value;
+    }
+
    
 
 
