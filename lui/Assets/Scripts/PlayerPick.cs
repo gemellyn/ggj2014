@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerPick : MonoBehaviour {
 
 	private GameObject hitObject ;
+    private Transform transformToMove;
 	private RaycastHit hit ;
 
     private Transform PP;
@@ -20,10 +21,18 @@ public class PlayerPick : MonoBehaviour {
 
             //Debug.DrawLine(Camera.main.transform.position, Camera.main.transform.position+Camera.main.transform.forward * 10.0f, Color.red);
             if (hitObject != null){
-                hitObject.transform.parent.transform.parent = null;
-                hitObject.transform.parent.transform.position = transform.position + transform.forward;
-                hitObject.transform.rigidbody.isKinematic = false;
                 hitObject.collider.enabled = true;
+                hitObject.transform.rigidbody.isKinematic = false;
+
+                transformToMove.parent = null;
+                BoxCollider bc = hitObject.transform.GetComponent("BoxCollider") as BoxCollider;
+                transformToMove.position = new Vector3(transform.position.x + transform.forward.x, transform.position.y, transform.position.z + transform.forward.z);
+                RaycastHit hit = new RaycastHit() ;
+                if (Physics.Raycast(transformToMove.position, -transformToMove.up, out hit, Mathf.Infinity))
+                {
+                    transformToMove.position = new Vector3(transformToMove.position.x, hit.point.y, transformToMove.position.z);
+                }
+                
                 hitObject = null;
                 po.picked = false;
             }
@@ -40,8 +49,9 @@ public class PlayerPick : MonoBehaviour {
                             hitObject = hit.collider.gameObject;
                             hitObject.transform.rigidbody.isKinematic = true;
                             hitObject.collider.enabled = false;
-                            hitObject.transform.parent.transform.parent = transform;
-                            hitObject.transform.parent.transform.position = new Vector3(hitObject.transform.parent.transform.position.x, transform.position.y + 1.0f, hitObject.transform.parent.transform.position.z);
+                            transformToMove = hitObject.transform.parent.transform ;
+                            transformToMove.parent = transform;
+                            transformToMove.position = new Vector3(transformToMove.position.x, transformToMove.position.y + 1.0f,transformToMove.transform.position.z);
                             po.picked = true;
                         }
                     }
