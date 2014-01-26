@@ -45,7 +45,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1400
+        y: 3185
         width: 512
         height: 1585
       alignment: 7
@@ -54,7 +54,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 668
-        y: 1400
+        y: 3185
         width: 550
         height: 1585
       alignment: 7
@@ -63,7 +63,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1380
-        y: 1400
+        y: 3185
         width: 649
         height: 1585
       alignment: 9
@@ -72,7 +72,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2089
-        y: 1400
+        y: 3185
         width: 632
         height: 1585
       alignment: 9
@@ -81,7 +81,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2829
-        y: 1400
+        y: 3185
         width: 649
         height: 1585
       alignment: 9
@@ -90,7 +90,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3534
-        y: 1400
+        y: 3180
         width: 688
         height: 1590
       alignment: 9
@@ -99,7 +99,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4304
-        y: 1400
+        y: 3180
         width: 608
         height: 1590
       alignment: 7
@@ -108,7 +108,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4924
-        y: 1400
+        y: 3180
         width: 553
         height: 1590
       alignment: 7
@@ -117,7 +117,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5496
-        y: 1400
+        y: 3180
         width: 583
         height: 1590
       alignment: 7
@@ -126,7 +126,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6100
-        y: 1400
+        y: 3180
         width: 601
         height: 1590
       alignment: 7
@@ -135,7 +135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6729
-        y: 1400
+        y: 3180
         width: 1401
         height: 1590
       alignment: 7
@@ -144,7 +144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1790
         width: 574
         height: 1302
       alignment: 7
@@ -153,7 +153,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 614
-        y: 0
+        y: 1790
         width: 614
         height: 1315
       alignment: 9
@@ -162,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1395
-        y: 0
+        y: 1790
         width: 653
         height: 1322
       alignment: 9
@@ -171,7 +171,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2055
-        y: 0
+        y: 1790
         width: 606
         height: 1328
       alignment: 9
@@ -180,7 +180,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2685
-        y: 0
+        y: 1790
         width: 1129
         height: 1322
       alignment: 7
@@ -189,10 +189,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3913
-        y: 0
+        y: 1790
         width: 1165
         height: 1326
       alignment: 7
       pivot: {x: .5, y: 0}
+    - name: balloon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 787
+        height: 1733
+      alignment: 9
+      pivot: {x: .311668187, y: 2.16552642e-08}
   spritePackingTag: 
   userData: 
