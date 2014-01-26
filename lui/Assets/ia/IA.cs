@@ -11,7 +11,7 @@ public class IA : MonoBehaviour {
     //Rumination
     private float rumination = 0;
 
-    private const float ruminPerSecBase =0.5f;
+    private const float ruminPerSecBase =1.5f;
     private float ruminPerSec = ruminPerSecBase; 
 
     //Eye check

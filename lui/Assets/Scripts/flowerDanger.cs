@@ -21,16 +21,6 @@ public class flowerDanger : MonoBehaviour {
 		}
 	}
     
-    void OnTriggerStay(Collider other)
-    {
-        Debug.Log(other.gameObject.name);
-        if (other.tag.Equals("Lui"))
-        {
-            IA luiIA = other.gameObject.GetComponent("IA") as IA;
-            //luiIA.addRumination(0.5f);
-        }
-    }
-    
     void OnTriggerExit(Collider other)
     {
         if (other.tag.Equals("Lui"))
