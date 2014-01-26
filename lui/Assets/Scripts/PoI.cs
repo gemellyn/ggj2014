@@ -29,6 +29,8 @@ public class PoI : MonoBehaviour {
 
 			} else if (name.Equals("Alpaga")) {
 
+			} else if (name.Equals("Shop")) {
+
 			}
 		}
 	}
