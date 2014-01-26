@@ -15,7 +15,6 @@ public class flowerDanger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-        Debug.Log(other.gameObject.name);
 		if (other.tag.Equals("Lui")) {
             IA luiIA = other.gameObject.GetComponent("IA") as IA;
             luiIA.setRumination(80.0f);
