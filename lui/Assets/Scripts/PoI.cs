@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PoI : MonoBehaviour {
 
+    private bool used = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -13,8 +15,13 @@ public class PoI : MonoBehaviour {
 	
 	}
 
-	void OnTriggerStay(Collider other) {
+	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals("Lui")) {
+            if (!used){
+                IA luiIA = other.gameObject.GetComponent("IA") as IA;
+                luiIA.addRumination(-20);
+                used = true;
+            }
 			if (name.Equals("Elephant")) {
 
 			} else if (name.Equals("Girafe")) {
