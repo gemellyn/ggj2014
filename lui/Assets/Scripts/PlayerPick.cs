@@ -20,10 +20,20 @@ public class PlayerPick : MonoBehaviour {
 	void Update () {
         Vector3 pos = new Vector3(transform.position.x + transform.forward.x * 3.0f, transform.position.y + 10.0f, transform.position.z + transform.forward.z * 3.0f);
         //Debug.DrawLine(pos, pos-transform.up*100.0f, Color.red);
+
+        Debug.DrawLine(pos, pos - (Vector3.up*10.0f), Color.red);
+
+        if (Input.GetKeyDown("f"))
+        {
+            RaycastHit hit = new RaycastHit();
+
+            Physics.Raycast(pos, -Vector3.up, out hit, Mathf.Infinity);
+                print("HIT : " + hit.point);
+        }
         
         if(Input.GetKeyDown("e")) {
 
-            //Debug.DrawLine(Camera.main.transform.position, Camera.main.transform.position+Camera.main.transform.forward * 10.0f, Color.red);
+            
             if (hitObject != null){
                
                 //transformToMove.position = new Vector3(transform.position.x + transform.forward.x, transform.position.y, transform.position.z + transform.forward.z);
@@ -31,7 +41,7 @@ public class PlayerPick : MonoBehaviour {
 
                 //Vector3 pos = new Vector3(transform.position.x + transform.forward.x * 2.0f, transform.position.y + 10.0f, transform.position.z + transform.forward.z * 2.0f);
         
-                if (Physics.Raycast(pos, -hitObject.transform.up, out hit, Mathf.Infinity))
+                if (Physics.Raycast(pos, -Vector3.up, out hit, Mathf.Infinity))
                 {
                     //Debug.DrawRay(pos, -hitObject.transform.up * 100.0f, Color.blue, 10.0f);
                     hitObject.collider.enabled = true;
@@ -40,12 +50,13 @@ public class PlayerPick : MonoBehaviour {
                     transformToMove.parent = null;
                     BoxCollider bc = hitObject.transform.GetComponent("BoxCollider") as BoxCollider;
                     //Debug.DrawLine(pos, hit.point, Color.black,10.0f);
+                    //print("HIT : " + hit.point);
                     transformToMove.position = new Vector3(hit.point.x, hit.point.y+bc.size.y/2, hit.point.z);
                     
-                    if (Physics.Raycast(hit.point, transformToMove.position-hit.point , out hit2, Mathf.Infinity)){
+                    /*if (Physics.Raycast(hit.point, transformToMove.position-hit.point , out hit2, Mathf.Infinity)){
                         transformToMove.position = new Vector3(transformToMove.position.x, transformToMove.position.y-hit2.distance, transformToMove.position.z);
                         //Debug.DrawRay(hit.point, transformToMove.position - hit.point, Color.blue, 10.0f);
-                    }
+                    }*/
                 }
                 
                 hitObject = null;
