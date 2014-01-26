@@ -15,7 +15,13 @@ public class PoI : MonoBehaviour {
 
 	void OnTriggerStay(Collider other) {
 		if (other.tag.Equals("Lui")) {
-			//TODO trigger event
+			if (name.Equals("Elephant")) {
+
+			} else if (name.Equals("Girafe")) {
+
+			} else if (name.Equals("Alpaga")) {
+
+			}
 		}
 	}
 }
