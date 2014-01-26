@@ -13,14 +13,14 @@ public class flowerDanger : MonoBehaviour {
 	void Update () {
 	
 	}
-
+    /*
 	void OnTriggerEnter(Collider other) {
 		if (other.tag.Equals("Lui")) {
             IA luiIA = other.gameObject.GetComponent("IA") as IA;
             luiIA.setRumination(80.0f);
 		}
 	}
-
+    */
     void OnTriggerStay(Collider other)
     {
         Debug.Log(other.gameObject.name);
@@ -30,7 +30,7 @@ public class flowerDanger : MonoBehaviour {
             luiIA.addRumination(0.5f);
         }
     }
-
+    /*
     void OnTriggerExit(Collider other)
     {
         if (other.tag.Equals("Lui"))
@@ -38,5 +38,5 @@ public class flowerDanger : MonoBehaviour {
             IA luiIA = other.gameObject.GetComponent("IA") as IA;
             luiIA.addRumination(-20.0f);
         }
-    }
+    }*/
 }
