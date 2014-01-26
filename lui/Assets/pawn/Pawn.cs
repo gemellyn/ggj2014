@@ -30,8 +30,7 @@ public class Pawn : MonoBehaviour {
 
         if (blockAnims)
             return;
-        if (!audio.isPlaying)
-            audio.Play();
+        
 
         if(actualAnim != anim)   
             transform.FindChild("sprite").GetComponent<Animator>().SetBool(anim, true);
@@ -115,6 +114,8 @@ public class Pawn : MonoBehaviour {
 
     public void launchAnimEvent(string animName)
     {
+        if (!GetComponent<AudioSource>().isPlaying)
+            GetComponent<AudioSource>().Play();
         print("launchAnimEvent " + animName);
         transform.FindChild("sprite").GetComponent<Animator>().SetBool(animName, true);
     }
