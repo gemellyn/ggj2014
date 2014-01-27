@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Pawn : MonoBehaviour {
 
+
     public AudioSource Gun1 = null;
     private bool dead = false;
     private float eyeCheckTimer = 0;
@@ -140,10 +141,7 @@ public class Pawn : MonoBehaviour {
         dosJoueur = dos;
     }
 
-    public void OnGUI()
-    {
-       // GUI.Label(new Rect(200, 5, 180, 20), eyeCheckTimer.ToString());
-    }
+    
 
     
                

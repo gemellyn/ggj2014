@@ -6,8 +6,12 @@ public class AnimEventManager : MonoBehaviour {
     Pawn pawn;
     Transform parent;
     Animator animator;
-    
+    bool showEscape = false;
 
+    public void showEscapeGUI()
+    {
+        showEscape = true;
+    }
     public void youCanMove()
     {
         print("youCanMove");
@@ -31,6 +35,20 @@ public class AnimEventManager : MonoBehaviour {
         print("blockOtherAnims");
         pawn.blockAnims = false;
         pawn.actualAnim = "";
+    }
+
+    public void OnGUI()
+    {
+        if (showEscape)
+        {
+            var centeredStyle = GUI.skin.GetStyle("Label");
+            centeredStyle.alignment = TextAnchor.UpperCenter;
+            centeredStyle.fontSize = 50;
+            GUI.contentColor = Color.black;
+            GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 45, 300, 200), "Press ESC to retry !", centeredStyle);
+
+        }
+        // GUI.Label(new Rect(200, 5, 180, 20), eyeCheckTimer.ToString());
     }
 
      

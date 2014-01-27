@@ -5,6 +5,7 @@ public class IA : MonoBehaviour {
 
     private float timeStop;
 
+
     public Transform player = null;
 	public AudioSource ambiance;
     public AudioSource happySound;
@@ -14,7 +15,7 @@ public class IA : MonoBehaviour {
     //Rumination
     private float rumination = 0;
 
-    private const float ruminPerSecBase =1.5f;
+    private const float ruminPerSecBase = 1f;
     private float ruminPerSec = ruminPerSecBase; 
 
     //Eye check
@@ -89,6 +90,7 @@ public class IA : MonoBehaviour {
 	void Start () {
         pawn = GetComponent<Pawn>();
         player = GameObject.Find("player").transform;
+        Screen.showCursor = false; 
     }
 
     //Il joue devant nous
@@ -239,7 +241,7 @@ public class IA : MonoBehaviour {
 		float maxPitch = 1.0f;
 		ambiance.pitch = (pitch * (maxPitch - minPitch)) + minPitch;
         happySound.pitch = (pitch * (maxPitch - minPitch)) + minPitch;
-		print("PITCH BITCH: " + ambiance.pitch);
+		//print("PITCH BITCH: " + ambiance.pitch);
 
 
         //Test jauges
@@ -285,6 +287,7 @@ public class IA : MonoBehaviour {
 
     public void OnGUI()
     {
+        //GUI.Label(new Rect(5, 5, 180, 20), "rumination: " + rumination.ToString());
        /* GUI.Label(new Rect(5, 5, 180, 20), "rumination: " + rumination.ToString());
         GUI.Label(new Rect(5, 25, 180, 20), "timeStop: " + timeStop.ToString());
         GUI.Label(new Rect(5, 45, 180, 20), "timerEyeCheck: " + timerEyeCheck.ToString());

@@ -25,28 +25,28 @@ public class PoI : MonoBehaviour {
             collider.enabled = false;
 
 			if (name.Equals("Elephant") ) {
-                 luiIA.setRumination(20);
+                luiIA.addRumination(-40);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackFlying");
 			} 
             else if (name.Equals("Girafe")) {
-                 luiIA.setRumination(20);
+                luiIA.addRumination(-40);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Kite");
 
             }
             else if (name.Equals("Alpaga"))
             {
-                 luiIA.setRumination(20);
+                luiIA.addRumination(-40);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Umbrella");
 
             }
             else if (name.Equals("Shop") )
             {
-                 luiIA.setRumination(20);
+                luiIA.addRumination(-40);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("Balloon");
 			}
             else if (name.Equals("Sapin") )
             {
-                 luiIA.setRumination(20);
+                luiIA.addRumination(-40);
                 other.gameObject.GetComponent<Pawn>().launchAnimEvent("BackJump");
 
             }
